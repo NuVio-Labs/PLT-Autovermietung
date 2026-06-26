@@ -2,7 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const fieldBase =
-  "w-full rounded-[--radius-md] border border-[--color-border] bg-[--color-background] px-4 text-base text-[--color-text] placeholder:text-[--color-muted] transition-colors focus-visible:outline-none focus-visible:border-[--color-primary] disabled:opacity-60 aria-[invalid=true]:border-red-500";
+  "w-full rounded-(--radius-md) border border-(--color-border) bg-(--color-background) px-4 text-base text-(--color-text) placeholder:text-(--color-muted) transition-colors focus-visible:outline-none focus-visible:border-(--color-primary) disabled:opacity-60 aria-[invalid=true]:border-red-500";
 
 const Input = React.forwardRef<
   HTMLInputElement,
@@ -36,7 +36,7 @@ const Select = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <select
     ref={ref}
-    className={cn(fieldBase, "h-12 appearance-none bg-[--color-background] pr-10", className)}
+    className={cn(fieldBase, "h-12 appearance-none bg-(--color-background) pr-10", className)}
     {...props}
   />
 ));

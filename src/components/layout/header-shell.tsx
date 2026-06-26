@@ -22,7 +22,7 @@ export function HeaderShell({ children }: { children: React.ReactNode }) {
       className={cn(
         "sticky top-0 z-40 transition-colors duration-300",
         scrolled
-          ? "border-b border-[--color-border] bg-white shadow-[--shadow-card]"
+          ? "border-b border-(--color-border) bg-white shadow-(--shadow-card)"
           : "border-b border-transparent bg-white/80 backdrop-blur",
       )}
     >

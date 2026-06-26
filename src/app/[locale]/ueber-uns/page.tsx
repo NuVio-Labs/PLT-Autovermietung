@@ -44,22 +44,22 @@ export default async function AboutPage({
 
       <Section>
         <div className="mx-auto max-w-3xl">
-          <p className="text-xl font-medium text-[--color-text]">
+          <p className="text-xl font-medium text-(--color-text)">
             {t("aboutPage.intro")}
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-[--color-muted]">
+          <p className="mt-4 text-lg leading-relaxed text-(--color-muted)">
             {t("aboutPage.body")}
           </p>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {highlights.map(({ icon: Icon, key }) => (
-            <div key={key} className="rounded-[--radius-lg] bg-[--color-surface] p-6">
-              <Icon className="size-6 text-[--color-primary]" aria-hidden />
+            <div key={key} className="rounded-(--radius-lg) bg-(--color-surface) p-6">
+              <Icon className="size-6 text-(--color-primary)" aria-hidden />
               <h2 className="mt-3 font-semibold">
                 {t(`why.items.${key}.title`)}
               </h2>
-              <p className="mt-1 text-sm text-[--color-muted]">
+              <p className="mt-1 text-sm text-(--color-muted)">
                 {t(`why.items.${key}.description`)}
               </p>
             </div>

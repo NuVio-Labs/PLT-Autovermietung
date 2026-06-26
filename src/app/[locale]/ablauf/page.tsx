@@ -44,14 +44,14 @@ export default async function AblaufPage({
           {steps.map((step, i) => (
             <li key={step}>
               <Card className="flex items-start gap-4 p-6">
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[--color-accent] font-bold text-[--color-on-accent]">
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-(--color-accent) font-bold text-(--color-on-accent)">
                   {i + 1}
                 </span>
                 <div>
                   <h2 className="font-semibold">
                     {t(`process.steps.${step}.title`)}
                   </h2>
-                  <p className="mt-1 text-[--color-muted]">
+                  <p className="mt-1 text-(--color-muted)">
                     {t(`process.steps.${step}.description`)}
                   </p>
                 </div>
@@ -60,14 +60,14 @@ export default async function AblaufPage({
           ))}
         </ol>
 
-        <div className="mt-12 rounded-[--radius-lg] bg-[--color-surface] p-8">
+        <div className="mt-12 rounded-(--radius-lg) bg-(--color-surface) p-8">
           <h2 className="text-xl font-semibold">
             {t("process.documents.title")}
           </h2>
           <ul className="mt-5 grid gap-3 sm:grid-cols-2">
             {docs.map((d) => (
-              <li key={d} className="flex items-center gap-2.5 text-[--color-text]">
-                <Check className="size-5 text-[--color-accent-dark]" aria-hidden />
+              <li key={d} className="flex items-center gap-2.5 text-(--color-text)">
+                <Check className="size-5 text-(--color-accent-dark)" aria-hidden />
                 {t(`process.documents.${d}`)}
               </li>
             ))}

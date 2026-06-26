@@ -23,7 +23,7 @@ export async function CategoryCard({
   const img = categoryImages[category.id];
 
   return (
-    <Card className="group flex flex-col overflow-hidden p-0 ring-1 ring-transparent transition-all duration-300 hover:-translate-y-1 hover:shadow-[--shadow-floating]">
+    <Card className="group flex flex-col overflow-hidden p-0 ring-1 ring-transparent transition-all duration-300 hover:-translate-y-1 hover:shadow-(--shadow-floating)">
       <div className="relative aspect-[16/10] overflow-hidden">
         {img && (
           <Image
@@ -37,7 +37,7 @@ export async function CategoryCard({
         {/* Marken-Akzent: farbiges Icon-Badge */}
         <div
           className={cn(
-            "absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-[--radius-md] text-white shadow-md",
+            "absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-(--radius-md) text-white shadow-md",
             accent.bg,
           )}
         >
@@ -49,7 +49,7 @@ export async function CategoryCard({
         <h3 className="text-lg font-semibold">
           {t(`categories.${category.id}.name`)}
         </h3>
-        <p className="mt-2 flex-1 text-sm text-[--color-muted]">
+        <p className="mt-2 flex-1 text-sm text-(--color-muted)">
           {t(`categories.${category.id}.description`)}
         </p>
         <div className="mt-5">

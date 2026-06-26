@@ -39,7 +39,7 @@ export function CallBarButton({ className }: { className?: string }) {
           type="button"
           onClick={open}
           className={cn(
-            "flex h-12 flex-1 items-center justify-center gap-2 rounded-[--radius-md] border border-[--color-border] font-semibold text-[--color-text]",
+            "flex h-12 flex-1 items-center justify-center gap-2 rounded-(--radius-md) border border-(--color-border) font-semibold text-(--color-text)",
             className,
           )}
         >

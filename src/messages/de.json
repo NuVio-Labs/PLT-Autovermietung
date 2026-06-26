@@ -2,8 +2,8 @@
   "meta": {
     "siteName": "PLT Autovermietung",
     "home": {
-      "title": "PLT Autovermietung Kreis Kleve – PKW, Transporter, LKW & Anhänger mieten",
-      "description": "PLT Autovermietung am Niederrhein: PKW, Transporter, LKW und Anhänger flexibel mieten – an 11 Stationen im Kreis Kleve (Weeze, Goch, Geldern, Kevelaer u.v.m.). Jetzt Verfügbarkeit prüfen."
+      "title": "PLT Autovermietung Kreis Kleve – PKW, LKW, Transporter & Anhänger mieten",
+      "description": "PLT Autovermietung am Niederrhein: PKW, LKW, Transporter und Anhänger flexibel mieten – an 11 Stationen im Kreis Kleve (Weeze, Goch, Geldern, Kevelaer u.v.m.). Jetzt Verfügbarkeit prüfen."
     }
   },
   "nav": {
@@ -30,7 +30,7 @@
   "hero": {
     "title": "Fahrzeug mieten am Niederrhein",
     "tagline": "schnell, fair und unkompliziert",
-    "subtitle": "Ob PKW, Transporter, LKW oder Anhänger: PLT Autovermietung bietet flexible Mietlösungen für private und gewerbliche Einsätze."
+    "subtitle": "Ob PKW, LKW, Transporter oder Anhänger: PLT Autovermietung bietet flexible Mietlösungen für private und gewerbliche Einsätze."
   },
   "trust": {
     "local": "11 Stationen im Kreis Kleve",
@@ -82,7 +82,7 @@
       },
       "fleet": {
         "title": "Vielfältiger Fuhrpark",
-        "description": "PKW, Transporter, LKW und Anhänger für jeden Einsatz."
+        "description": "PKW, LKW, Transporter und Anhänger für jeden Einsatz."
       },
       "fair": {
         "title": "Faire Konditionen",
@@ -211,7 +211,7 @@
     }
   },
   "footer": {
-    "tagline": "Fahrzeugvermietung am Niederrhein – PKW, Transporter, LKW & Anhänger.",
+    "tagline": "Fahrzeugvermietung am Niederrhein – PKW, LKW, Transporter & Anhänger.",
     "navigation": "Navigation",
     "contact": "Kontakt",
     "legal": "Rechtliches",

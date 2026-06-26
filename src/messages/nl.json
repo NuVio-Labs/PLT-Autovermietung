@@ -2,8 +2,8 @@
   "meta": {
     "siteName": "PLT Autoverhuur",
     "home": {
-      "title": "PLT Autoverhuur regio Kleve – auto's, bestelwagens, vrachtwagens & aanhangers huren",
-      "description": "PLT Autoverhuur vlak over de grens: huur flexibel auto's, bestelwagens, vrachtwagens en aanhangers – op 11 stations in de regio Kleve (Weeze, Goch, Geldern, Kevelaer e.v.a.). Controleer nu de beschikbaarheid."
+      "title": "PLT Autoverhuur regio Kleve – auto's, vrachtwagens, bestelwagens & aanhangers huren",
+      "description": "PLT Autoverhuur vlak over de grens: huur flexibel auto's, vrachtwagens, bestelwagens en aanhangers – op 11 stations in de regio Kleve (Weeze, Goch, Geldern, Kevelaer e.v.a.). Controleer nu de beschikbaarheid."
     }
   },
   "nav": {
@@ -30,7 +30,7 @@
   "hero": {
     "title": "Voertuig huren vlak over de grens",
     "tagline": "snel, eerlijk en eenvoudig",
-    "subtitle": "Auto's, bestelwagens, vrachtwagens en aanhangers flexibel huren bij PLT Autoverhuur in Weeze."
+    "subtitle": "Auto's, vrachtwagens, bestelwagens en aanhangers flexibel huren bij PLT Autoverhuur in Weeze."
   },
   "trust": {
     "local": "11 stations in de regio Kleve",
@@ -82,7 +82,7 @@
       },
       "fleet": {
         "title": "Gevarieerd wagenpark",
-        "description": "Auto's, bestelwagens, vrachtwagens en aanhangers voor elk gebruik."
+        "description": "Auto's, vrachtwagens, bestelwagens en aanhangers voor elk gebruik."
       },
       "fair": {
         "title": "Eerlijke voorwaarden",
@@ -211,7 +211,7 @@
     }
   },
   "footer": {
-    "tagline": "Voertuigverhuur vlak over de grens – auto's, bestelwagens, vrachtwagens & aanhangers.",
+    "tagline": "Voertuigverhuur vlak over de grens – auto's, vrachtwagens, bestelwagens & aanhangers.",
     "navigation": "Navigatie",
     "contact": "Contact",
     "legal": "Juridisch",

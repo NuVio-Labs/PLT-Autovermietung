@@ -11,7 +11,7 @@ export async function StickyBookingBar() {
   const locale = await getLocale();
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[--color-border] bg-[--color-background]/95 backdrop-blur md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-(--color-border) bg-(--color-background)/95 backdrop-blur md:hidden">
       <div
         className="flex gap-2 container-px py-3"
         style={{ paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}

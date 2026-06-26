@@ -43,7 +43,7 @@ export default async function PricesPage({
       />
 
       <Section>
-        <p className="max-w-2xl text-lg text-[--color-muted]">
+        <p className="max-w-2xl text-lg text-(--color-muted)">
           {t("pricesPage.intro")}
         </p>
 
@@ -56,7 +56,7 @@ export default async function PricesPage({
             >
               <div
                 className={cn(
-                  "grid h-11 w-11 shrink-0 place-items-center rounded-[--radius-md] text-white",
+                  "grid h-11 w-11 shrink-0 place-items-center rounded-(--radius-md) text-white",
                   accentClasses[c.accent].bg,
                 )}
               >
@@ -66,7 +66,7 @@ export default async function PricesPage({
                 <h3 className="font-semibold">
                   {t(`categories.${c.id}.name`)}
                 </h3>
-                <p className="text-sm text-[--color-muted]">
+                <p className="text-sm text-(--color-muted)">
                   {t("pricesPage.from")} — {t("pricesPage.notes.title")}
                 </p>
               </div>
@@ -75,9 +75,9 @@ export default async function PricesPage({
         </div>
 
         {/* Variabler-Preis-Hinweis */}
-        <div className="mt-10 flex items-start gap-3 rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-5">
-          <Info className="mt-0.5 size-5 shrink-0 text-[--color-accent-dark]" />
-          <p className="text-[--color-text]">{t("pricesPage.variableNote")}</p>
+        <div className="mt-10 flex items-start gap-3 rounded-(--radius-lg) border border-(--color-border) bg-(--color-surface) p-5">
+          <Info className="mt-0.5 size-5 shrink-0 text-(--color-accent-dark)" />
+          <p className="text-(--color-text)">{t("pricesPage.variableNote")}</p>
         </div>
 
         {/* Hinweise zu Kaution / Versicherung / Kilometer */}
@@ -85,14 +85,14 @@ export default async function PricesPage({
           <h2 className="text-xl font-semibold">
             {t("pricesPage.notes.title")}
           </h2>
-          <ul className="mt-4 grid gap-3 text-[--color-muted] sm:grid-cols-3">
-            <li className="rounded-[--radius-md] bg-[--color-surface] p-4">
+          <ul className="mt-4 grid gap-3 text-(--color-muted) sm:grid-cols-3">
+            <li className="rounded-(--radius-md) bg-(--color-surface) p-4">
               {t("pricesPage.notes.deposit")}
             </li>
-            <li className="rounded-[--radius-md] bg-[--color-surface] p-4">
+            <li className="rounded-(--radius-md) bg-(--color-surface) p-4">
               {t("pricesPage.notes.insurance")}
             </li>
-            <li className="rounded-[--radius-md] bg-[--color-surface] p-4">
+            <li className="rounded-(--radius-md) bg-(--color-surface) p-4">
               {t("pricesPage.notes.mileage")}
             </li>
           </ul>

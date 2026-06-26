@@ -63,14 +63,14 @@ export default async function ContactPage({
             />
 
             <div className="flex items-start gap-4">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-[--radius-md] bg-[--color-surface-2] text-[--color-primary]">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-(--radius-md) bg-(--color-surface-2) text-(--color-primary)">
                 <Clock className="size-5" aria-hidden />
               </span>
               <div>
-                <p className="text-sm font-medium text-[--color-text]">
+                <p className="text-sm font-medium text-(--color-text)">
                   {t("contactPage.hours")}
                 </p>
-                <ul className="mt-1 space-y-1 text-[--color-muted]">
+                <ul className="mt-1 space-y-1 text-(--color-muted)">
                   {contact.openingHours.map((oh) => (
                     <li key={oh.days} className="flex gap-3">
                       <span className="w-16">{oh.days}</span>
@@ -86,7 +86,7 @@ export default async function ContactPage({
               href={contact.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-[--color-primary] hover:text-[--color-primary-dark]"
+              className="inline-flex items-center gap-2 text-sm font-medium text-(--color-primary) hover:text-(--color-primary-dark)"
             >
               {t("contactPage.showMap")}
               <ExternalLink className="size-4" />
@@ -121,17 +121,17 @@ function ContactRow({
 }) {
   return (
     <div className="flex items-start gap-4">
-      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-[--radius-md] bg-[--color-surface-2] text-[--color-primary]">
+      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-(--radius-md) bg-(--color-surface-2) text-(--color-primary)">
         <Icon className="size-5" aria-hidden />
       </span>
       <div>
-        <p className="text-sm font-medium text-[--color-text]">{label}</p>
+        <p className="text-sm font-medium text-(--color-text)">{label}</p>
         {href ? (
-          <a href={href} className="text-[--color-muted] hover:text-[--color-primary]">
+          <a href={href} className="text-(--color-muted) hover:text-(--color-primary)">
             {value}
           </a>
         ) : (
-          <p className="text-[--color-muted]">{value}</p>
+          <p className="text-(--color-muted)">{value}</p>
         )}
       </div>
     </div>

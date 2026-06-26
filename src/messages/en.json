@@ -3,7 +3,7 @@
     "siteName": "PLT Vehicle Rental",
     "home": {
       "title": "PLT Vehicle Rental Kreis Kleve – Cars, Vans, Trucks & Trailers",
-      "description": "PLT Vehicle Rental near the Lower Rhine: rent cars, vans, trucks and trailers flexibly – at 11 stations across Kreis Kleve (Weeze, Goch, Geldern, Kevelaer and more). Check availability online."
+      "description": "PLT Vehicle Rental near the Lower Rhine: rent cars, trucks, vans and trailers flexibly – at 11 stations across Kreis Kleve (Weeze, Goch, Geldern, Kevelaer and more). Check availability online."
     }
   },
   "nav": {
@@ -30,7 +30,7 @@
   "hero": {
     "title": "Rent a vehicle near Weeze",
     "tagline": "fast, flexible and straightforward",
-    "subtitle": "Cars, vans, trucks and trailers for private and business use."
+    "subtitle": "Cars, trucks, vans and trailers for private and business use."
   },
   "trust": {
     "local": "11 stations across Kreis Kleve",
@@ -82,7 +82,7 @@
       },
       "fleet": {
         "title": "Diverse fleet",
-        "description": "Cars, vans, trucks and trailers for every use case."
+        "description": "Cars, trucks, vans and trailers for every use case."
       },
       "fair": {
         "title": "Fair conditions",
@@ -211,7 +211,7 @@
     }
   },
   "footer": {
-    "tagline": "Vehicle rental near Weeze – cars, vans, trucks & trailers.",
+    "tagline": "Vehicle rental near Weeze – cars, trucks, vans & trailers.",
     "navigation": "Navigation",
     "contact": "Contact",
     "legal": "Legal",

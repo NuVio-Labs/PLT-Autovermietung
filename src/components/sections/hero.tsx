@@ -9,7 +9,7 @@ export async function Hero() {
   const locale = await getLocale();
 
   return (
-    <section className="relative isolate overflow-hidden bg-[--color-primary] text-white">
+    <section className="relative isolate overflow-hidden bg-(--color-primary) text-white">
       {/* Hero-Bild (priorisiert geladen – Projekt.md §27) */}
       <Image
         src={unsplash(heroImage.id, { w: 1920, h: 1080, q: 68 })}

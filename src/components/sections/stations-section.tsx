@@ -13,13 +13,13 @@ export async function StationsSection() {
   const t = await getTranslations();
   const accents = ["blue", "pink", "green"] as const;
   const accentBg = {
-    blue: "bg-[--color-blue]",
-    pink: "bg-[--color-pink]",
-    green: "bg-[--color-green]",
+    blue: "bg-(--color-blue)",
+    pink: "bg-(--color-pink)",
+    green: "bg-(--color-green)",
   };
 
   return (
-    <Section className="bg-[--color-surface]">
+    <Section className="bg-(--color-surface)">
       <SectionHeading
         title={t("stations.title")}
         subtitle={t("stations.subtitle")}
@@ -28,7 +28,7 @@ export async function StationsSection() {
       <ul className="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-3">
         {stations.map((s, i) => (
           <li key={s.name}>
-            <span className="inline-flex items-center gap-2 rounded-full border border-[--color-border] bg-[--color-background] px-4 py-2 text-sm font-medium shadow-[--shadow-card]">
+            <span className="inline-flex items-center gap-2 rounded-full border border-(--color-border) bg-(--color-background) px-4 py-2 text-sm font-medium shadow-(--shadow-card)">
               <span
                 className={`grid size-5 place-items-center rounded-full text-white ${accentBg[accents[i % 3]]}`}
               >

@@ -26,9 +26,9 @@ type Props = {
 };
 
 const accentBg: Record<BrandAccent, string> = {
-  blue: "bg-[--color-blue]",
-  pink: "bg-[--color-pink]",
-  green: "bg-[--color-green]",
+  blue: "bg-(--color-blue)",
+  pink: "bg-(--color-pink)",
+  green: "bg-(--color-green)",
 };
 
 /**
@@ -65,7 +65,7 @@ export function VehicleFilter({ allLabel, ctaLabel, facts, categories }: Props) 
         {visible.map((c) => (
           <Card
             key={c.id}
-            className="group flex flex-col overflow-hidden p-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-[--shadow-floating]"
+            className="group flex flex-col overflow-hidden p-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-(--shadow-floating)"
           >
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
@@ -87,12 +87,12 @@ export function VehicleFilter({ allLabel, ctaLabel, facts, categories }: Props) 
 
             <div className="flex flex-1 flex-col p-6">
               <h3 className="text-xl font-semibold">{c.name}</h3>
-              <p className="mt-2 text-sm text-[--color-muted]">{c.description}</p>
-              <ul className="mt-4 flex flex-1 flex-col gap-2 text-sm text-[--color-text]">
+              <p className="mt-2 text-sm text-(--color-muted)">{c.description}</p>
+              <ul className="mt-4 flex flex-1 flex-col gap-2 text-sm text-(--color-text)">
                 {facts.map((f) => (
                   <li key={f} className="flex items-center gap-2">
                     <Check
-                      className="size-4 text-[--color-accent-dark]"
+                      className="size-4 text-(--color-accent-dark)"
                       aria-hidden
                     />
                     {f}
@@ -131,8 +131,8 @@ function FilterChip({
       className={cn(
         "rounded-full px-4 py-2 text-sm font-medium transition-colors",
         active
-          ? "bg-[--color-primary] text-[--color-on-primary]"
-          : "bg-[--color-surface-2] text-[--color-muted] hover:bg-[--color-border]",
+          ? "bg-(--color-primary) text-(--color-on-primary)"
+          : "bg-(--color-surface-2) text-(--color-muted) hover:bg-(--color-border)",
       )}
     >
       {label}

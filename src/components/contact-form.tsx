@@ -54,7 +54,7 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="flex items-start gap-3 rounded-[--radius-lg] border border-green-200 bg-green-50 p-6 text-green-900">
+      <div className="flex items-start gap-3 rounded-(--radius-lg) border border-green-200 bg-green-50 p-6 text-green-900">
         <CheckCircle2 className="mt-0.5 size-5 shrink-0" />
         <p>{t("contactPage.form.success")}</p>
       </div>
@@ -132,10 +132,10 @@ export function ContactForm() {
         />
       </Field>
 
-      <label className="flex items-start gap-3 text-sm text-[--color-muted]">
+      <label className="flex items-start gap-3 text-sm text-(--color-muted)">
         <input
           type="checkbox"
-          className="mt-1 size-4 shrink-0 rounded border-[--color-border] accent-[--color-primary]"
+          className="mt-1 size-4 shrink-0 rounded border-(--color-border) accent-(--color-primary)"
           aria-invalid={!!errors.consent}
           {...register("consent")}
         />
@@ -146,7 +146,7 @@ export function ContactForm() {
       )}
 
       {status === "error" && (
-        <div className="flex items-start gap-3 rounded-[--radius-md] border border-red-200 bg-red-50 p-4 text-sm text-red-800">
+        <div className="flex items-start gap-3 rounded-(--radius-md) border border-red-200 bg-red-50 p-4 text-sm text-red-800">
           <AlertCircle className="mt-0.5 size-5 shrink-0" />
           <p>{t("contactPage.form.error")}</p>
         </div>
@@ -174,7 +174,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="mb-1.5 block text-sm font-medium text-[--color-text]">
+      <label className="mb-1.5 block text-sm font-medium text-(--color-text)">
         {label}
       </label>
       {children}

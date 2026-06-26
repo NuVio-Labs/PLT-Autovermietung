@@ -19,8 +19,8 @@ export function NavLink({
       href={href}
       aria-current={active ? "page" : undefined}
       className={cn(
-        "relative text-sm font-medium transition-colors hover:text-[--color-primary]",
-        active ? "text-[--color-primary]" : "text-[--color-text]",
+        "relative text-sm font-medium transition-colors hover:text-(--color-primary)",
+        active ? "text-(--color-primary)" : "text-(--color-text)",
       )}
     >
       {children}

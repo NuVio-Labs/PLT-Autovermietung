@@ -12,14 +12,14 @@ export async function ProcessSteps() {
         {steps.map((step, i) => (
           <li key={step} className="relative">
             <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[--color-accent] font-bold text-[--color-on-accent]">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-(--color-accent) font-bold text-(--color-on-accent)">
                 {i + 1}
               </span>
               <h3 className="font-semibold">
                 {t(`process.steps.${step}.title`)}
               </h3>
             </div>
-            <p className="mt-3 text-sm text-[--color-muted]">
+            <p className="mt-3 text-sm text-(--color-muted)">
               {t(`process.steps.${step}.description`)}
             </p>
           </li>

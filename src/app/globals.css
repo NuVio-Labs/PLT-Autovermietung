@@ -1,31 +1,36 @@
 @import "tailwindcss";
 
 /*
- * PLT Autovermietung – Design-Tokens
+ * PLT Autovermietung – Design-Tokens (Tailwind v4)
  * --------------------------------------------------------------
- * Farben sind aus dem echten PLT-Logo abgeleitet (P=Blau, L=Pink,
+ * Werte sind aus dem echten PLT-Logo abgeleitet (P=Blau, L=Pink,
  * T=Grün, Smile=Schwarz). Verspielter Multicolor-Look:
  * Primär = Blau, drei Akzentfarben rotieren über Kategorien/Sektionen.
  *
- * Token-Struktur folgt Projekt.md §22.
+ * WICHTIG (v4): Tokens werden EINMALIG in @theme definiert. Daraus
+ * erzeugt Tailwind sowohl die Utilities (bg-primary, text-muted, …) als
+ * auch die :root-Variablen. KEINE separate :root-Deklaration + @theme inline
+ * (das führt zu self-referenzierenden Variablen).
+ *
+ * CSS-Variablen in Klassen mit v4-Syntax referenzieren: bg-(--color-x).
  */
 
-:root {
+@theme {
   /* Brand – Primär (Logo-Blau "P") */
-  --color-primary: #2f78b8; /* leicht satter als Logo für besseren Kontrast */
+  --color-primary: #2f78b8;
   --color-primary-dark: #245e92;
 
   /* Brand-Akzente (Logo-Farben) */
   --color-blue: #4287c4;
   --color-blue-dark: #336c9f;
-  --color-pink: #dd3a8a; /* Logo "L" */
+  --color-pink: #dd3a8a;
   --color-pink-dark: #b82d70;
-  --color-green: #7fa80c; /* Logo "T" (etwas dunkler für AA-Kontrast) */
+  --color-green: #7fa80c;
   --color-green-dark: #688a0a;
 
   /* Haupt-Akzent für CTAs = Grün ("Go / verfügbar") */
-  --color-accent: var(--color-green);
-  --color-accent-dark: var(--color-green-dark);
+  --color-accent: #7fa80c;
+  --color-accent-dark: #688a0a;
 
   /* Neutrals / Surfaces */
   --color-background: #ffffff;
@@ -53,47 +58,7 @@
   --spacing-section: 5rem;
 }
 
-/* Tailwind v4 Theme-Mapping: macht Tokens als Utilities verfügbar
-   (bg-primary, text-muted, rounded-md, shadow-card, …) */
-@theme inline {
-  --color-primary: var(--color-primary);
-  --color-primary-dark: var(--color-primary-dark);
-  --color-accent: var(--color-accent);
-  --color-accent-dark: var(--color-accent-dark);
-
-  --color-blue: var(--color-blue);
-  --color-blue-dark: var(--color-blue-dark);
-  --color-pink: var(--color-pink);
-  --color-pink-dark: var(--color-pink-dark);
-  --color-green: var(--color-green);
-  --color-green-dark: var(--color-green-dark);
-
-  --color-background: var(--color-background);
-  --color-surface: var(--color-surface);
-  --color-surface-2: var(--color-surface-2);
-  --color-border: var(--color-border);
-
-  --color-text: var(--color-text);
-  --color-muted: var(--color-muted);
-  --color-on-primary: var(--color-on-primary);
-  --color-on-accent: var(--color-on-accent);
-
-  --radius-sm: var(--radius-sm);
-  --radius-md: var(--radius-md);
-  --radius-lg: var(--radius-lg);
-  --radius-xl: var(--radius-xl);
-
-  --shadow-card: var(--shadow-card);
-  --shadow-floating: var(--shadow-floating);
-
-  --font-sans: var(--font-sans);
-}
-
 @layer base {
-  * {
-    border-color: var(--color-border);
-  }
-
   html {
     scroll-behavior: smooth;
   }

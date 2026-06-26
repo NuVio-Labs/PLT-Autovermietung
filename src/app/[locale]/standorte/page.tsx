@@ -47,12 +47,12 @@ export default async function StationsPage({
             <Card key={s.name} className="flex flex-col p-6">
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-start gap-3">
-                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[--radius-md] bg-[--color-surface-2] text-[--color-primary]">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-(--radius-md) bg-(--color-surface-2) text-(--color-primary)">
                     <MapPin className="size-5" aria-hidden />
                   </span>
                   <div>
                     <h2 className="font-semibold leading-snug">{s.name}</h2>
-                    <p className="mt-1 text-sm text-[--color-muted]">
+                    <p className="mt-1 text-sm text-(--color-muted)">
                       {s.street}
                       <br />
                       {s.postalCode} {s.city}
@@ -60,7 +60,7 @@ export default async function StationsPage({
                   </div>
                 </div>
                 {s.primary && (
-                  <Badge className="bg-[--color-green] text-white">
+                  <Badge className="bg-(--color-green) text-white">
                     {t("stationsPage.primaryBadge")}
                   </Badge>
                 )}
@@ -69,7 +69,7 @@ export default async function StationsPage({
               <div className="mt-5 flex flex-col gap-2">
                 <a
                   href={s.phoneHref}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-[--color-primary] hover:text-[--color-primary-dark]"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-(--color-primary) hover:text-(--color-primary-dark)"
                 >
                   <Phone className="size-4" />
                   {s.phone}
@@ -78,7 +78,7 @@ export default async function StationsPage({
                   href={stationMapsUrl(s)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-[--color-muted] hover:text-[--color-primary]"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-(--color-muted) hover:text-(--color-primary)"
                 >
                   <ExternalLink className="size-4" />
                   {t("stationsPage.showOnMap")}
@@ -88,9 +88,9 @@ export default async function StationsPage({
           ))}
         </div>
 
-        <div className="mt-10 flex items-start gap-3 rounded-[--radius-lg] border border-[--color-border] bg-[--color-surface] p-5">
-          <Info className="mt-0.5 size-5 shrink-0 text-[--color-accent-dark]" />
-          <p className="text-[--color-text]">{t("stationsPage.note")}</p>
+        <div className="mt-10 flex items-start gap-3 rounded-(--radius-lg) border border-(--color-border) bg-(--color-surface) p-5">
+          <Info className="mt-0.5 size-5 shrink-0 text-(--color-accent-dark)" />
+          <p className="text-(--color-text)">{t("stationsPage.note")}</p>
         </div>
       </Section>
 

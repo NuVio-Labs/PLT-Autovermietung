@@ -36,11 +36,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} h-full`}>
-      <body className="flex min-h-full flex-col bg-[--color-background]">
+      <body className="flex min-h-full flex-col bg-(--color-background)">
         {/* Skip-Link für Tastaturnutzer (Projekt.md §37) */}
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[--color-primary] focus:px-4 focus:py-2 focus:text-[--color-on-primary]"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-(--color-primary) focus:px-4 focus:py-2 focus:text-(--color-on-primary)"
         >
           Zum Inhalt springen
         </a>

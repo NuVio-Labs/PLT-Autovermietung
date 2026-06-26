@@ -7,7 +7,7 @@ export async function CtaBanner() {
   const locale = await getLocale();
 
   return (
-    <section className="bg-[--color-primary] text-[--color-on-primary]">
+    <section className="bg-(--color-primary) text-(--color-on-primary)">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 container-px py-16 text-center">
         <div>
           <h2 className="text-3xl font-bold sm:text-4xl">

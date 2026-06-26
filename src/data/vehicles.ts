@@ -38,17 +38,17 @@ export const vehicleCategories: VehicleCategory[] = [
     filterable: true,
   },
   {
-    id: "van",
-    bookingCategory: { de: "transporter", nl: "bestelwagen", en: "van" },
-    icon: "truck",
-    accent: "pink",
-    filterable: true,
-  },
-  {
     id: "truck",
     bookingCategory: { de: "lkw", nl: "vrachtwagen", en: "truck" },
     icon: "package",
     accent: "green",
+    filterable: true,
+  },
+  {
+    id: "van",
+    bookingCategory: { de: "transporter", nl: "bestelwagen", en: "van" },
+    icon: "truck",
+    accent: "pink",
     filterable: true,
   },
   {
@@ -80,19 +80,19 @@ export const accentClasses: Record<
   { bg: string; text: string; ring: string }
 > = {
   blue: {
-    bg: "bg-[--color-blue]",
-    text: "text-[--color-blue-dark]",
-    ring: "group-hover:ring-[--color-blue]",
+    bg: "bg-(--color-blue)",
+    text: "text-(--color-blue-dark)",
+    ring: "group-hover:ring-(--color-blue)",
   },
   pink: {
-    bg: "bg-[--color-pink]",
-    text: "text-[--color-pink-dark]",
-    ring: "group-hover:ring-[--color-pink]",
+    bg: "bg-(--color-pink)",
+    text: "text-(--color-pink-dark)",
+    ring: "group-hover:ring-(--color-pink)",
   },
   green: {
-    bg: "bg-[--color-green]",
-    text: "text-[--color-green-dark]",
-    ring: "group-hover:ring-[--color-green]",
+    bg: "bg-(--color-green)",
+    text: "text-(--color-green-dark)",
+    ring: "group-hover:ring-(--color-green)",
   },
 };
 

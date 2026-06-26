@@ -59,13 +59,13 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Sprache wählen"
-        className="inline-flex items-center gap-1.5 rounded-[--radius-md] border border-[--color-border] bg-white px-2.5 py-1.5 text-sm font-semibold text-[--color-text] transition-colors hover:bg-[--color-surface]"
+        className="inline-flex items-center gap-1.5 rounded-(--radius-md) border border-(--color-border) bg-white px-2.5 py-1.5 text-sm font-semibold text-(--color-text) transition-colors hover:bg-(--color-surface)"
       >
         <span className="text-base leading-none">{current.flag}</span>
         <span>{current.label}</span>
         <ChevronDown
           className={cn(
-            "size-4 text-[--color-muted] transition-transform",
+            "size-4 text-(--color-muted) transition-transform",
             open && "rotate-180",
           )}
         />
@@ -74,7 +74,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-[--radius-md] border border-[--color-border] bg-white py-1 shadow-[--shadow-floating]"
+          className="absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-(--radius-md) border border-(--color-border) bg-white py-1 shadow-(--shadow-floating)"
         >
           {routing.locales.map((loc) => {
             const meta = localeMeta[loc];
@@ -85,14 +85,14 @@ export function LanguageSwitcher({ className }: { className?: string }) {
                   type="button"
                   onClick={() => switchTo(loc)}
                   className={cn(
-                    "flex w-full items-center gap-3 px-3 py-2 text-left text-sm transition-colors hover:bg-[--color-surface]",
+                    "flex w-full items-center gap-3 px-3 py-2 text-left text-sm transition-colors hover:bg-(--color-surface)",
                     active && "font-semibold",
                   )}
                 >
                   <span className="text-base leading-none">{meta.flag}</span>
                   <span className="flex-1">{meta.full}</span>
                   {active && (
-                    <Check className="size-4 text-[--color-primary]" />
+                    <Check className="size-4 text-(--color-primary)" />
                   )}
                 </button>
               </li>
