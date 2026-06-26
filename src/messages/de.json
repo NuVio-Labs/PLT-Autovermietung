@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "siteName": "PLT Autovermietung",
+    "home": {
+      "title": "PLT Autovermietung Kreis Kleve – PKW, Transporter, LKW & Anhänger mieten",
+      "description": "PLT Autovermietung am Niederrhein: PKW, Transporter, LKW und Anhänger flexibel mieten – an 11 Stationen im Kreis Kleve (Weeze, Goch, Geldern, Kevelaer u.v.m.). Jetzt Verfügbarkeit prüfen."
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "vehicles": "Fahrzeuge",
+    "prices": "Preise",
+    "process": "Ablauf",
+    "locations": "Standorte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "menu": "Menü",
+    "close": "Schließen",
+    "language": "Sprache"
+  },
+  "cta": {
+    "checkAvailability": "Verfügbarkeit prüfen",
+    "requestVehicle": "Fahrzeug anfragen",
+    "callNow": "Direkt anrufen",
+    "call": "Anrufen",
+    "contactUs": "Kontakt aufnehmen",
+    "viewVehicles": "Fahrzeuge ansehen",
+    "viewCategory": "Ansehen"
+  },
+  "hero": {
+    "title": "Fahrzeug mieten am Niederrhein",
+    "tagline": "schnell, fair und unkompliziert",
+    "subtitle": "Ob PKW, Transporter, LKW oder Anhänger: PLT Autovermietung bietet flexible Mietlösungen für private und gewerbliche Einsätze."
+  },
+  "trust": {
+    "local": "11 Stationen im Kreis Kleve",
+    "flexible": "Flexible Mietdauer",
+    "fleet": "PKW, LKW, Transporter & Anhänger",
+    "personal": "Persönlicher Kontakt",
+    "fair": "Faire Abwicklung"
+  },
+  "categories": {
+    "title": "Unsere Fahrzeugkategorien",
+    "subtitle": "Finden Sie schnell das passende Fahrzeug für Ihren Bedarf.",
+    "all": "Alle",
+    "car": {
+      "name": "PKW",
+      "description": "Flexibel unterwegs – ideal als Ersatzfahrzeug oder für die Wochenendmiete."
+    },
+    "van": {
+      "name": "Transporter",
+      "description": "Ideal für Umzüge, Möbeltransporte und gewerbliche Einsätze."
+    },
+    "truck": {
+      "name": "LKW",
+      "description": "Für größere Transporte und gewerbliche Anforderungen."
+    },
+    "trailer": {
+      "name": "Anhänger",
+      "description": "Praktisch für Transporte aller Art – flexibel und kurzfristig verfügbar."
+    },
+    "longterm": {
+      "name": "Langzeitmiete",
+      "description": "Flexible Fuhrparkergänzung über längere Zeiträume."
+    },
+    "business": {
+      "name": "Geschäftskunden",
+      "description": "Zuverlässige Lösungen für regelmäßige und kurzfristige Anmietungen."
+    }
+  },
+  "why": {
+    "title": "Warum PLT Autovermietung?",
+    "subtitle": "Unkomplizierte Fahrzeugvermietung mit persönlichem Service.",
+    "items": {
+      "local": {
+        "title": "Wohnortnah im Kreis Kleve",
+        "description": "Abholung an vielen Stationen am Niederrhein – persönlich und unkompliziert."
+      },
+      "flexible": {
+        "title": "Flexible Mietdauer",
+        "description": "Vom Wochenende bis zur Langzeitmiete – passend zu Ihrem Bedarf."
+      },
+      "fleet": {
+        "title": "Vielfältiger Fuhrpark",
+        "description": "PKW, Transporter, LKW und Anhänger für jeden Einsatz."
+      },
+      "fair": {
+        "title": "Faire Konditionen",
+        "description": "Transparente Abwicklung ohne versteckte Überraschungen."
+      }
+    }
+  },
+  "process": {
+    "title": "So funktioniert's",
+    "subtitle": "In wenigen Schritten zum passenden Fahrzeug.",
+    "steps": {
+      "select": {
+        "title": "Fahrzeug auswählen",
+        "description": "Wählen Sie die passende Fahrzeugkategorie für Ihren Bedarf."
+      },
+      "period": {
+        "title": "Zeitraum angeben",
+        "description": "Teilen Sie uns Ihren gewünschten Mietzeitraum mit."
+      },
+      "check": {
+        "title": "Verfügbarkeit prüfen",
+        "description": "Wir prüfen die Verfügbarkeit und melden uns schnell zurück."
+      },
+      "pickup": {
+        "title": "Abholen & losfahren",
+        "description": "Fahrzeug abholen und unkompliziert starten."
+      }
+    },
+    "documents": {
+      "title": "Benötigte Unterlagen",
+      "license": "Gültiger Führerschein",
+      "id": "Personalausweis oder Reisepass",
+      "payment": "Zahlungsmittel",
+      "deposit": "ggf. Kaution"
+    }
+  },
+  "stations": {
+    "title": "Unsere Standorte im Kreis Kleve",
+    "subtitle": "Fahrzeuge abholen an vielen Stationen am Niederrhein – wohnortnah und unkompliziert.",
+    "count": "11 Vermietstationen",
+    "viewAll": "Alle Standorte ansehen"
+  },
+  "callDialog": {
+    "title": "Station anrufen",
+    "subtitle": "Wählen Sie eine Station – oder lassen Sie die nächste in Ihrer Nähe finden.",
+    "findNearest": "Nächste Station finden",
+    "locating": "Standort wird ermittelt …",
+    "nearestLabel": "Nächste Station",
+    "distanceAway": "ca. {km} km entfernt",
+    "callThis": "Diese Station anrufen",
+    "allStations": "Alle Stationen",
+    "geoDenied": "Standort nicht verfügbar. Bitte wählen Sie eine Station aus der Liste.",
+    "geoUnsupported": "Standortbestimmung wird von Ihrem Browser nicht unterstützt.",
+    "close": "Schließen"
+  },
+  "stationsPage": {
+    "title": "Vermietstationen am Niederrhein",
+    "subtitle": "PLT Autovermietung ist mit Partnerstationen im gesamten Kreis Kleve und der Region vertreten. Fahrzeuge können wohnortnah abgeholt und zurückgegeben werden.",
+    "primaryBadge": "Hauptstandort",
+    "callStation": "Station anrufen",
+    "showOnMap": "Auf Karte ansehen",
+    "note": "Bitte stimmen Sie Abholung und Verfügbarkeit vorab telefonisch oder über die Anfrage ab."
+  },
+  "vehiclesPage": {
+    "title": "Unsere Fahrzeuge",
+    "subtitle": "Wählen Sie die Fahrzeugkategorie, die zu Ihrem Bedarf passt – wir finden die passende Lösung.",
+    "facts": {
+      "loadingSpace": "Großer Laderaum",
+      "flexibleDuration": "Flexible Mietdauer",
+      "privateBusiness": "Für Privat & Gewerbe",
+      "onRequest": "Auf Anfrage verfügbar"
+    }
+  },
+  "pricesPage": {
+    "title": "Preise & Tarife",
+    "subtitle": "Faire und flexible Mietlösungen – transparent und unkompliziert.",
+    "intro": "Unsere Preise richten sich nach Fahrzeug, Mietdauer und Verfügbarkeit. Gerne erstellen wir Ihnen ein unverbindliches Angebot.",
+    "variableNote": "Der Preis ist abhängig von Fahrzeug, Mietdauer und Verfügbarkeit. Prüfen Sie jetzt unverbindlich die Verfügbarkeit.",
+    "from": "ab",
+    "perDay": "/ Tag",
+    "perWeekend": "/ Wochenende",
+    "perWeek": "/ Woche",
+    "notes": {
+      "title": "Hinweise",
+      "deposit": "Für bestimmte Fahrzeuge wird eine Kaution fällig.",
+      "insurance": "Versicherungsumfang je nach Fahrzeug und Tarif.",
+      "mileage": "Kilometerregelung je nach Mietdauer und Fahrzeug."
+    }
+  },
+  "aboutPage": {
+    "title": "Über PLT Autovermietung",
+    "subtitle": "Unkomplizierte Fahrzeugvermietung am Niederrhein.",
+    "intro": "PLT Autovermietung steht für unkomplizierte Fahrzeugvermietung am Niederrhein.",
+    "body": "Ob privater Umzug, gewerblicher Transport oder kurzfristiger Fahrzeugbedarf: Bei PLT erhalten Kunden persönliche Beratung und flexible Mietlösungen passend zum Bedarf."
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind für Sie da – schnell und unkompliziert erreichbar.",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "showMap": "Standort auf Karte ansehen",
+    "form": {
+      "title": "Anfrage senden",
+      "name": "Name",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "vehicle": "Gewünschtes Fahrzeug / Kategorie",
+      "vehiclePlaceholder": "Bitte wählen",
+      "period": "Mietzeitraum",
+      "periodPlaceholder": "z. B. 12.07. – 15.07.2026",
+      "message": "Nachricht",
+      "messagePlaceholder": "Ihre Nachricht an uns",
+      "consent": "Ich habe die Datenschutzhinweise gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.",
+      "submit": "Anfrage absenden",
+      "submitting": "Wird gesendet …",
+      "success": "Vielen Dank! Ihre Anfrage wurde gesendet. Wir melden uns schnellstmöglich bei Ihnen.",
+      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
+      "errors": {
+        "nameRequired": "Bitte geben Sie Ihren Namen an.",
+        "phoneRequired": "Bitte geben Sie eine Telefonnummer an.",
+        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse an.",
+        "consentRequired": "Bitte stimmen Sie der Datenverarbeitung zu."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Fahrzeugvermietung am Niederrhein – PKW, Transporter, LKW & Anhänger.",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "ctaBanner": {
+    "title": "Bereit für Ihre nächste Fahrt?",
+    "subtitle": "Prüfen Sie unverbindlich die Verfügbarkeit oder rufen Sie uns direkt an."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "back": "Zur Startseite"
+  }
+}

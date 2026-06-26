@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "siteName": "PLT Vehicle Rental",
+    "home": {
+      "title": "PLT Vehicle Rental Kreis Kleve – Cars, Vans, Trucks & Trailers",
+      "description": "PLT Vehicle Rental near the Lower Rhine: rent cars, vans, trucks and trailers flexibly – at 11 stations across Kreis Kleve (Weeze, Goch, Geldern, Kevelaer and more). Check availability online."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "vehicles": "Vehicles",
+    "prices": "Prices",
+    "process": "How it works",
+    "locations": "Locations",
+    "about": "About us",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language"
+  },
+  "cta": {
+    "checkAvailability": "Check availability",
+    "requestVehicle": "Request vehicle",
+    "callNow": "Call directly",
+    "call": "Call",
+    "contactUs": "Contact us",
+    "viewVehicles": "View vehicles",
+    "viewCategory": "View"
+  },
+  "hero": {
+    "title": "Rent a vehicle near Weeze",
+    "tagline": "fast, flexible and straightforward",
+    "subtitle": "Cars, vans, trucks and trailers for private and business use."
+  },
+  "trust": {
+    "local": "11 stations across Kreis Kleve",
+    "flexible": "Flexible rental period",
+    "fleet": "Cars, trucks, vans & trailers",
+    "personal": "Personal contact",
+    "fair": "Fair handling"
+  },
+  "categories": {
+    "title": "Our vehicle categories",
+    "subtitle": "Quickly find the right vehicle for your needs.",
+    "all": "All",
+    "car": {
+      "name": "Car",
+      "description": "Flexible on the road – ideal as a replacement vehicle or for the weekend."
+    },
+    "van": {
+      "name": "Van",
+      "description": "Ideal for moving, furniture transport and business use."
+    },
+    "truck": {
+      "name": "Truck",
+      "description": "For larger transports and commercial requirements."
+    },
+    "trailer": {
+      "name": "Trailer",
+      "description": "Practical for all kinds of transport – flexible and available at short notice."
+    },
+    "longterm": {
+      "name": "Long-term rental",
+      "description": "Flexible fleet extension over longer periods."
+    },
+    "business": {
+      "name": "Business customers",
+      "description": "Reliable solutions for regular and short-term rentals."
+    }
+  },
+  "why": {
+    "title": "Why PLT Vehicle Rental?",
+    "subtitle": "Straightforward vehicle rental with personal service.",
+    "items": {
+      "local": {
+        "title": "Close by across Kreis Kleve",
+        "description": "Pick up at many stations near the Lower Rhine border – personal and straightforward."
+      },
+      "flexible": {
+        "title": "Flexible rental period",
+        "description": "From a weekend to long-term rental – matched to your needs."
+      },
+      "fleet": {
+        "title": "Diverse fleet",
+        "description": "Cars, vans, trucks and trailers for every use case."
+      },
+      "fair": {
+        "title": "Fair conditions",
+        "description": "Transparent handling with no hidden surprises."
+      }
+    }
+  },
+  "process": {
+    "title": "How it works",
+    "subtitle": "Get to the right vehicle in just a few steps.",
+    "steps": {
+      "select": {
+        "title": "Choose a vehicle",
+        "description": "Select the right vehicle category for your needs."
+      },
+      "period": {
+        "title": "Specify the period",
+        "description": "Let us know your preferred rental period."
+      },
+      "check": {
+        "title": "Check availability",
+        "description": "We check availability and get back to you quickly."
+      },
+      "pickup": {
+        "title": "Pick up & drive off",
+        "description": "Pick up the vehicle and get started effortlessly."
+      }
+    },
+    "documents": {
+      "title": "Required documents",
+      "license": "Valid driving licence",
+      "id": "ID card or passport",
+      "payment": "Means of payment",
+      "deposit": "deposit if applicable"
+    }
+  },
+  "stations": {
+    "title": "Our locations across Kreis Kleve",
+    "subtitle": "Pick up vehicles at many stations near the Lower Rhine – close by and straightforward.",
+    "count": "11 rental stations",
+    "viewAll": "View all locations"
+  },
+  "callDialog": {
+    "title": "Call a station",
+    "subtitle": "Choose a station – or let us find the nearest one to you.",
+    "findNearest": "Find nearest station",
+    "locating": "Determining location …",
+    "nearestLabel": "Nearest station",
+    "distanceAway": "approx. {km} km away",
+    "callThis": "Call this station",
+    "allStations": "All stations",
+    "geoDenied": "Location unavailable. Please choose a station from the list.",
+    "geoUnsupported": "Location services are not supported by your browser.",
+    "close": "Close"
+  },
+  "stationsPage": {
+    "title": "Rental stations near the Lower Rhine",
+    "subtitle": "PLT Vehicle Rental operates with partner stations across the entire Kreis Kleve region. Vehicles can be picked up and returned close to home.",
+    "primaryBadge": "Main location",
+    "callStation": "Call station",
+    "showOnMap": "View on map",
+    "note": "Please arrange pickup and availability in advance by phone or via the request form."
+  },
+  "vehiclesPage": {
+    "title": "Our vehicles",
+    "subtitle": "Choose the vehicle category that fits your needs – we'll find the right solution.",
+    "facts": {
+      "loadingSpace": "Large loading space",
+      "flexibleDuration": "Flexible rental period",
+      "privateBusiness": "For private & business",
+      "onRequest": "Available on request"
+    }
+  },
+  "pricesPage": {
+    "title": "Prices & rates",
+    "subtitle": "Fair and flexible rental solutions – transparent and straightforward.",
+    "intro": "Our prices depend on the vehicle, rental period and availability. We're happy to provide a non-binding quote.",
+    "variableNote": "The price depends on the vehicle, rental period and availability. Check availability now without obligation.",
+    "from": "from",
+    "perDay": "/ day",
+    "perWeekend": "/ weekend",
+    "perWeek": "/ week",
+    "notes": {
+      "title": "Notes",
+      "deposit": "A deposit applies for certain vehicles.",
+      "insurance": "Insurance coverage depends on vehicle and rate.",
+      "mileage": "Mileage policy depends on rental period and vehicle."
+    }
+  },
+  "aboutPage": {
+    "title": "About PLT Vehicle Rental",
+    "subtitle": "Straightforward vehicle rental near the border.",
+    "intro": "PLT Vehicle Rental stands for straightforward vehicle rental near the Lower Rhine border region.",
+    "body": "Whether it's a private move, commercial transport or short-term vehicle needs: at PLT, customers receive personal advice and flexible rental solutions tailored to their needs."
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "We're here for you – fast and easy to reach.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening hours",
+    "showMap": "View location on map",
+    "form": {
+      "title": "Send a request",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "vehicle": "Desired vehicle / category",
+      "vehiclePlaceholder": "Please select",
+      "period": "Rental period",
+      "periodPlaceholder": "e.g. 12 Jul – 15 Jul 2026",
+      "message": "Message",
+      "messagePlaceholder": "Your message to us",
+      "consent": "I have read the privacy notice and agree to the processing of my data to handle my request.",
+      "submit": "Send request",
+      "submitting": "Sending …",
+      "success": "Thank you! Your request has been sent. We'll get back to you as soon as possible.",
+      "error": "An error occurred while sending. Please try again or call us.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "phoneRequired": "Please enter a phone number.",
+        "emailInvalid": "Please enter a valid email address.",
+        "consentRequired": "Please agree to the data processing."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Vehicle rental near Weeze – cars, vans, trucks & trailers.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved."
+  },
+  "ctaBanner": {
+    "title": "Ready for your next trip?",
+    "subtitle": "Check availability without obligation or call us directly."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "back": "Back to homepage"
+  }
+}

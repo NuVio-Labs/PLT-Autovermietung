@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "siteName": "PLT Autoverhuur",
+    "home": {
+      "title": "PLT Autoverhuur regio Kleve – auto's, bestelwagens, vrachtwagens & aanhangers huren",
+      "description": "PLT Autoverhuur vlak over de grens: huur flexibel auto's, bestelwagens, vrachtwagens en aanhangers – op 11 stations in de regio Kleve (Weeze, Goch, Geldern, Kevelaer e.v.a.). Controleer nu de beschikbaarheid."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "vehicles": "Voertuigen",
+    "prices": "Prijzen",
+    "process": "Werkwijze",
+    "locations": "Locaties",
+    "about": "Over ons",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Sluiten",
+    "language": "Taal"
+  },
+  "cta": {
+    "checkAvailability": "Beschikbaarheid controleren",
+    "requestVehicle": "Voertuig aanvragen",
+    "callNow": "Direct bellen",
+    "call": "Bellen",
+    "contactUs": "Contact opnemen",
+    "viewVehicles": "Voertuigen bekijken",
+    "viewCategory": "Bekijken"
+  },
+  "hero": {
+    "title": "Voertuig huren vlak over de grens",
+    "tagline": "snel, eerlijk en eenvoudig",
+    "subtitle": "Auto's, bestelwagens, vrachtwagens en aanhangers flexibel huren bij PLT Autoverhuur in Weeze."
+  },
+  "trust": {
+    "local": "11 stations in de regio Kleve",
+    "flexible": "Flexibele huurperiode",
+    "fleet": "Auto's, vrachtwagens, bestelwagens & aanhangers",
+    "personal": "Persoonlijk contact",
+    "fair": "Eerlijke afhandeling"
+  },
+  "categories": {
+    "title": "Onze voertuigcategorieën",
+    "subtitle": "Vind snel het juiste voertuig voor uw behoefte.",
+    "all": "Alle",
+    "car": {
+      "name": "Auto",
+      "description": "Flexibel onderweg – ideaal als vervangend voertuig of voor het weekend."
+    },
+    "van": {
+      "name": "Bestelwagen",
+      "description": "Ideaal voor verhuizingen, meubeltransport en zakelijk gebruik."
+    },
+    "truck": {
+      "name": "Vrachtwagen",
+      "description": "Voor groter transport en zakelijke behoeften."
+    },
+    "trailer": {
+      "name": "Aanhanger",
+      "description": "Handig voor allerlei transport – flexibel en snel beschikbaar."
+    },
+    "longterm": {
+      "name": "Langetermijnhuur",
+      "description": "Flexibele aanvulling op uw wagenpark over langere periodes."
+    },
+    "business": {
+      "name": "Zakelijke klanten",
+      "description": "Betrouwbare oplossingen voor regelmatige en kortdurende huur."
+    }
+  },
+  "why": {
+    "title": "Waarom PLT Autoverhuur?",
+    "subtitle": "Eenvoudige voertuigverhuur met persoonlijke service.",
+    "items": {
+      "local": {
+        "title": "Dichtbij in de regio Kleve",
+        "description": "Ophalen op meerdere stations vlak over de grens – persoonlijk en eenvoudig."
+      },
+      "flexible": {
+        "title": "Flexibele huurperiode",
+        "description": "Van een weekend tot langetermijnhuur – passend bij uw behoefte."
+      },
+      "fleet": {
+        "title": "Gevarieerd wagenpark",
+        "description": "Auto's, bestelwagens, vrachtwagens en aanhangers voor elk gebruik."
+      },
+      "fair": {
+        "title": "Eerlijke voorwaarden",
+        "description": "Transparante afhandeling zonder verborgen verrassingen."
+      }
+    }
+  },
+  "process": {
+    "title": "Zo werkt het",
+    "subtitle": "In een paar stappen naar het juiste voertuig.",
+    "steps": {
+      "select": {
+        "title": "Voertuig kiezen",
+        "description": "Kies de juiste voertuigcategorie voor uw behoefte."
+      },
+      "period": {
+        "title": "Periode aangeven",
+        "description": "Laat ons weten welke huurperiode u wenst."
+      },
+      "check": {
+        "title": "Beschikbaarheid controleren",
+        "description": "Wij controleren de beschikbaarheid en reageren snel."
+      },
+      "pickup": {
+        "title": "Ophalen & wegrijden",
+        "description": "Voertuig ophalen en eenvoudig van start gaan."
+      }
+    },
+    "documents": {
+      "title": "Benodigde documenten",
+      "license": "Geldig rijbewijs",
+      "id": "Identiteitskaart of paspoort",
+      "payment": "Betaalmiddel",
+      "deposit": "evt. borg"
+    }
+  },
+  "stations": {
+    "title": "Onze locaties in de regio Kleve",
+    "subtitle": "Voertuigen ophalen op meerdere stations vlak over de grens – dichtbij en eenvoudig.",
+    "count": "11 verhuurstations",
+    "viewAll": "Alle locaties bekijken"
+  },
+  "callDialog": {
+    "title": "Station bellen",
+    "subtitle": "Kies een station – of laat het dichtstbijzijnde in uw buurt vinden.",
+    "findNearest": "Dichtstbijzijnde station vinden",
+    "locating": "Locatie wordt bepaald …",
+    "nearestLabel": "Dichtstbijzijnde station",
+    "distanceAway": "ca. {km} km verderop",
+    "callThis": "Dit station bellen",
+    "allStations": "Alle stations",
+    "geoDenied": "Locatie niet beschikbaar. Kies een station uit de lijst.",
+    "geoUnsupported": "Locatiebepaling wordt niet ondersteund door uw browser.",
+    "close": "Sluiten"
+  },
+  "stationsPage": {
+    "title": "Verhuurstations vlak over de grens",
+    "subtitle": "PLT Autoverhuur is met partnerstations vertegenwoordigd in de hele regio Kleve. Voertuigen kunnen dichtbij worden opgehaald en teruggebracht.",
+    "primaryBadge": "Hoofdvestiging",
+    "callStation": "Station bellen",
+    "showOnMap": "Op kaart bekijken",
+    "note": "Stem het ophalen en de beschikbaarheid vooraf telefonisch of via de aanvraag af."
+  },
+  "vehiclesPage": {
+    "title": "Onze voertuigen",
+    "subtitle": "Kies de voertuigcategorie die bij uw behoefte past – wij vinden de juiste oplossing.",
+    "facts": {
+      "loadingSpace": "Grote laadruimte",
+      "flexibleDuration": "Flexibele huurperiode",
+      "privateBusiness": "Voor particulier & zakelijk",
+      "onRequest": "Op aanvraag beschikbaar"
+    }
+  },
+  "pricesPage": {
+    "title": "Prijzen & tarieven",
+    "subtitle": "Eerlijke en flexibele huuroplossingen – transparant en eenvoudig.",
+    "intro": "Onze prijzen zijn afhankelijk van het voertuig, de huurperiode en de beschikbaarheid. Wij maken graag een vrijblijvende offerte voor u.",
+    "variableNote": "De prijs is afhankelijk van het voertuig, de huurperiode en de beschikbaarheid. Controleer nu vrijblijvend de beschikbaarheid.",
+    "from": "vanaf",
+    "perDay": "/ dag",
+    "perWeekend": "/ weekend",
+    "perWeek": "/ week",
+    "notes": {
+      "title": "Opmerkingen",
+      "deposit": "Voor bepaalde voertuigen geldt een borg.",
+      "insurance": "Verzekeringsdekking afhankelijk van voertuig en tarief.",
+      "mileage": "Kilometerregeling afhankelijk van huurperiode en voertuig."
+    }
+  },
+  "aboutPage": {
+    "title": "Over PLT Autoverhuur",
+    "subtitle": "Eenvoudige voertuigverhuur vlak over de grens.",
+    "intro": "PLT Autoverhuur staat voor eenvoudige voertuigverhuur vlak over de grens.",
+    "body": "Of het nu gaat om een particuliere verhuizing, zakelijk transport of een kortdurende voertuigbehoefte: bij PLT krijgt u persoonlijk advies en flexibele huuroplossingen die bij uw behoefte passen."
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Wij staan voor u klaar – snel en eenvoudig bereikbaar.",
+    "address": "Adres",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "hours": "Openingstijden",
+    "showMap": "Locatie op kaart bekijken",
+    "form": {
+      "title": "Aanvraag versturen",
+      "name": "Naam",
+      "phone": "Telefoon",
+      "email": "E-mail",
+      "vehicle": "Gewenst voertuig / categorie",
+      "vehiclePlaceholder": "Maak een keuze",
+      "period": "Huurperiode",
+      "periodPlaceholder": "bijv. 12-07 t/m 15-07-2026",
+      "message": "Bericht",
+      "messagePlaceholder": "Uw bericht aan ons",
+      "consent": "Ik heb de privacyverklaring gelezen en ga akkoord met de verwerking van mijn gegevens voor de afhandeling van mijn aanvraag.",
+      "submit": "Aanvraag versturen",
+      "submitting": "Wordt verzonden …",
+      "success": "Bedankt! Uw aanvraag is verstuurd. Wij nemen zo snel mogelijk contact met u op.",
+      "error": "Er is een fout opgetreden bij het verzenden. Probeer het opnieuw of bel ons.",
+      "errors": {
+        "nameRequired": "Vul uw naam in.",
+        "phoneRequired": "Vul een telefoonnummer in.",
+        "emailInvalid": "Vul een geldig e-mailadres in.",
+        "consentRequired": "Ga akkoord met de gegevensverwerking."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Voertuigverhuur vlak over de grens – auto's, bestelwagens, vrachtwagens & aanhangers.",
+    "navigation": "Navigatie",
+    "contact": "Contact",
+    "legal": "Juridisch",
+    "imprint": "Colofon",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "ctaBanner": {
+    "title": "Klaar voor uw volgende rit?",
+    "subtitle": "Controleer vrijblijvend de beschikbaarheid of bel ons direct."
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "description": "De gezochte pagina bestaat niet of is verplaatst.",
+    "back": "Naar de homepage"
+  }
+}
