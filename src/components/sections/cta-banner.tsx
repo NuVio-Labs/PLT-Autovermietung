@@ -1,5 +1,4 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { CallButton } from "@/components/call-button";
 import { BookingLink } from "@/components/booking-link";
 
 export async function CtaBanner() {
@@ -19,11 +18,14 @@ export async function CtaBanner() {
           <BookingLink locale={locale} size="lg">
             {t("cta.checkAvailability")}
           </BookingLink>
-          <CallButton
+          <BookingLink
+            locale={locale}
             variant="outline"
             size="lg"
             className="border-white/30 bg-white/10 text-white hover:bg-white/20"
-          />
+          >
+            {t("cta.bookOnline")}
+          </BookingLink>
         </div>
       </div>
     </section>

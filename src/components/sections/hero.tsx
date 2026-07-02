@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import { heroImage, unsplash } from "@/data/images";
-import { CallButton } from "@/components/call-button";
 import { BookingLink } from "@/components/booking-link";
 
 export async function Hero() {
@@ -44,11 +43,14 @@ export async function Hero() {
             <BookingLink locale={locale} size="lg">
               {t("cta.checkAvailability")}
             </BookingLink>
-            <CallButton
+            <BookingLink
+              locale={locale}
               variant="outline"
               size="lg"
               className="border-white/40 bg-white/10 text-white backdrop-blur hover:bg-white/20"
-            />
+            >
+              {t("cta.bookOnline")}
+            </BookingLink>
           </div>
         </div>
       </div>

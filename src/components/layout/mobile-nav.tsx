@@ -9,7 +9,6 @@ import { mainNav } from "@/data/navigation";
 import { useMounted } from "@/lib/use-mounted";
 import { LanguageSwitcher } from "./language-switcher";
 import { BookingLink } from "@/components/booking-link";
-import { CallButton } from "@/components/call-button";
 
 export function MobileNav({ locale }: { locale: string }) {
   const t = useTranslations();
@@ -88,7 +87,9 @@ export function MobileNav({ locale }: { locale: string }) {
               <BookingLink locale={locale} size="lg" className="w-full">
                 {t("cta.checkAvailability")}
               </BookingLink>
-              <CallButton variant="outline" size="lg" className="w-full" />
+              <BookingLink locale={locale} variant="outline" size="lg" className="w-full">
+                {t("cta.bookOnline")}
+              </BookingLink>
             </div>
           </nav>
           </div>,

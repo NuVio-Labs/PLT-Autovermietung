@@ -19,6 +19,7 @@
     "language": "Language"
   },
   "cta": {
+    "bookOnline": "Book online",
     "checkAvailability": "Check availability",
     "requestVehicle": "Request vehicle",
     "callNow": "Call directly",
