@@ -37,10 +37,15 @@ export const contact = {
 
 /**
  * NuVio Core Buchungssystem (separates Projekt, nur per CTA verlinkt –
- * Projekt.md §34). Locale + optionale Kategorie werden als Query-Parameter
- * übergeben.
+ * Projekt.md §34). Öffentliche, loginfreie Buchungsstrecke pro Firma:
+ * /buchen/<companySlug>. PLT-Slug = "plt-autovermietung".
+ *
+ * Locale + optionale Kategorie werden als Query-Parameter mitgegeben. Die
+ * Buchungsseite wertet sie aktuell noch nicht aus (Flow läuft über den
+ * Pfad-Slug); sie schaden aber nicht und sind für eine spätere Mehrsprachigkeit
+ * bzw. Kategorie-Vorauswahl vorbereitet.
  */
-const NUVIO_CORE_BASE = "https://core.nuviolabs.de/booking/plt";
+const NUVIO_CORE_BASE = "https://core.nuviolabs.de/buchen/plt-autovermietung";
 
 export function bookingUrl(locale: string, category?: string): string {
   const params = new URLSearchParams({ locale });
