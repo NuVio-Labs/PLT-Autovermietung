@@ -56,7 +56,7 @@ src/
 
 Die Website verlinkt nur per CTA zum separaten Buchungssystem. Der Link wird in
 `src/data/contact.ts` über `bookingUrl(locale, category)` gebaut
-(`https://core.nuviolabs.de/booking/plt?locale=…&category=…`).
+(`https://core.nuviolabs.de/buchen/plt-autovermietung?locale=…&category=…`).
 
 ## Rechtstexte
 
