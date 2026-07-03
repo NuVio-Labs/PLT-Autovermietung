@@ -9,6 +9,7 @@
   "nav": {
     "home": "Home",
     "vehicles": "Voertuigen",
+    "availability": "Beschikbaarheid",
     "prices": "Prijzen",
     "process": "Werkwijze",
     "locations": "Locaties",
@@ -147,6 +148,22 @@
     "showOnMap": "Op kaart bekijken",
     "note": "Stem het ophalen en de beschikbaarheid vooraf telefonisch of via de aanvraag af."
   },
+  "availabilityPage": {
+    "title": "Beschikbaarheid controleren",
+    "subtitle": "Zie in één oogopslag welke voertuigen bij uw station vrij zijn – en boek direct online.",
+    "pickHint": "Kies eerst uw station. Daarna ziet u de op dit moment beschikbare voertuigen.",
+    "backToStations": "Ander station kiezen",
+    "windowNote": "Beschikbaarheid voor de eerstvolgende huurperiode. Voor kortere termijn belt u ons even.",
+    "statusAvailable": "Beschikbaar",
+    "statusBooked": "Bezet – bellen",
+    "callToBook": "Voor deze periode bezet – neem telefonisch contact op",
+    "seats": "{count} stoelen",
+    "towbar": "Trekhaak",
+    "ctaAvailable": "Passend voertuig gevonden? Boek uw gewenste periode direct online.",
+    "ctaAllBooked": "Op dit moment is er online geen voertuig vrij. Bel ons – vaak vinden we op korte termijn toch een oplossing: {phone}",
+    "noData": "Voor dit station zijn momenteel geen online beschikbaarheidsgegevens beschikbaar. Vraag het telefonisch na.",
+    "callStation": "Station bellen: {phone}"
+  },
   "vehiclesPage": {
     "title": "Onze voertuigen",
     "subtitle": "Kies de voertuigcategorie die bij uw behoefte past – wij vinden de juiste oplossing.",
@@ -202,6 +219,8 @@
       "submit": "Aanvraag versturen",
       "submitting": "Wordt verzonden …",
       "success": "Bedankt! Uw aanvraag is verstuurd. Wij nemen zo snel mogelijk contact met u op.",
+      "wipTitle": "Online-aanvraag in ontwikkeling",
+      "wipText": "We zijn het aanvraagformulier voor u aan het inrichten. Neem zolang telefonisch contact met ons op of boek direct online.",
       "error": "Er is een fout opgetreden bij het verzenden. Probeer het opnieuw of bel ons.",
       "errors": {
         "nameRequired": "Vul uw naam in.",

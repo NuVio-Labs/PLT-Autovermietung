@@ -63,7 +63,7 @@ export async function CategoryCard({
               accent.text,
             )}
           >
-            {t("cta.checkAvailability")}
+            {t("cta.bookOnline")}
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
           </BookingLink>
         </div>

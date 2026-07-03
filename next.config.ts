@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   images: {
     // Moderne Formate für die Fahrzeugbilder (siehe Projekt.md §28)
     formats: ["image/avif", "image/webp"],
-    // DEMO: Platzhalter-Fotos von Unsplash. Vor Livegang durch echte
+    // DEMO: Platzhalter-Fotos von Unsplash. Vor Live-Gang durch echte
     // PLT-Fahrzeugbilder ersetzen (Projekt.md §28/§41).
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },

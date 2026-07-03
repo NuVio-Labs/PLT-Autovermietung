@@ -17,6 +17,11 @@ export const routing = defineRouting({
       nl: "/voertuigen",
       en: "/vehicles",
     },
+    "/verfuegbarkeit": {
+      de: "/verfuegbarkeit",
+      nl: "/beschikbaarheid",
+      en: "/availability",
+    },
     "/preise": {
       de: "/preise",
       nl: "/prijzen",

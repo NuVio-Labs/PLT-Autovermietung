@@ -81,7 +81,8 @@ Die Website verlinkt nur per CTA zum separaten Buchungssystem. Der Link wird in
 - [ ] **Markenfarben final freigeben** (aktuell aus Logo abgeleitet)
 - [ ] **Öffnungszeiten** bestätigen (`data/contact.ts`)
 - [ ] **Preise / Tariflogik** (aktuell „auf Anfrage")
-- [ ] **Resend-Konfiguration** (`RESEND_API_KEY`, `CONTACT_FROM`, `CONTACT_TO`)
+- [ ] **Kontaktformular scharfschalten** – aktuell als „in Arbeit" markiert
+      (kein Mailversand mehr; Anfragen laufen künftig über das Core-System)
 - [ ] NL/EN-Übersetzungen final gegenlesen lassen
 - [ ] Datenschutzerklärung rechtlich prüfen lassen
 

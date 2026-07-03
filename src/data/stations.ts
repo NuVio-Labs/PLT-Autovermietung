@@ -9,6 +9,12 @@
 export type Station = {
   /** Partner-/Stationsname */
   name: string;
+  /**
+   * Stations-Slug im NuVio-Core-Buchungssystem (= Kleinbuchstaben-Ort).
+   * Bindeglied zu den öffentlichen Verfügbarkeitsdaten (public_stations /
+   * public_available_vehicles). Muss exakt dem Core-`slug` entsprechen.
+   */
+  slug: string;
   street: string;
   postalCode: string;
   city: string;
@@ -24,6 +30,7 @@ export type Station = {
 export const stations: Station[] = [
   {
     name: "Aral Tankstelle Weeze",
+    slug: "weeze",
     street: "Industriestraße 43",
     postalCode: "47652",
     city: "Weeze",
@@ -35,6 +42,7 @@ export const stations: Station[] = [
   },
   {
     name: "BFT Tankstelle Goch",
+    slug: "goch",
     street: "Klever Straße 10",
     postalCode: "47574",
     city: "Goch",
@@ -45,6 +53,7 @@ export const stations: Station[] = [
   },
   {
     name: "Aral Tankstelle Uedem",
+    slug: "uedem",
     street: "Molkereistraße 68",
     postalCode: "47589",
     city: "Uedem",
@@ -55,6 +64,7 @@ export const stations: Station[] = [
   },
   {
     name: "Shell Tankstelle Kevelaer",
+    slug: "kevelaer",
     street: "Lindenstraße 64",
     postalCode: "47623",
     city: "Kevelaer",
@@ -65,6 +75,7 @@ export const stations: Station[] = [
   },
   {
     name: "Shell Tankstelle Geldern",
+    slug: "geldern",
     street: "Burgstraße 12",
     postalCode: "47608",
     city: "Geldern",
@@ -75,6 +86,7 @@ export const stations: Station[] = [
   },
   {
     name: "BFT Tankstelle Kalkar-Kehrum",
+    slug: "kalkar",
     street: "Xantener Str. 371",
     postalCode: "47546",
     city: "Kalkar",
@@ -85,6 +97,7 @@ export const stations: Station[] = [
   },
   {
     name: "Aral Tankstelle Kranenburg",
+    slug: "kranenburg",
     street: "Klever Str. 85",
     postalCode: "47559",
     city: "Kranenburg",
@@ -95,6 +108,7 @@ export const stations: Station[] = [
   },
   {
     name: "Freie Tankstelle Steffens",
+    slug: "alpen",
     street: "Weseler Str. 98",
     postalCode: "46519",
     city: "Alpen",
@@ -105,6 +119,7 @@ export const stations: Station[] = [
   },
   {
     name: "PM Tankstelle Rheinberg",
+    slug: "rheinberg",
     street: "Rheinberger Str. 373",
     postalCode: "47495",
     city: "Rheinberg",
@@ -115,6 +130,7 @@ export const stations: Station[] = [
   },
   {
     name: "BFT Tankstelle Sonsbeck",
+    slug: "sonsbeck",
     street: "Weseler Straße 17",
     postalCode: "47665",
     city: "Sonsbeck",
@@ -125,6 +141,7 @@ export const stations: Station[] = [
   },
   {
     name: "HEM Tankstelle Xanten",
+    slug: "xanten",
     street: "Sonsbecker Straße 60",
     postalCode: "46509",
     city: "Xanten",

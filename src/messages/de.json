@@ -9,6 +9,7 @@
   "nav": {
     "home": "Startseite",
     "vehicles": "Fahrzeuge",
+    "availability": "Verfügbarkeit",
     "prices": "Preise",
     "process": "Ablauf",
     "locations": "Standorte",
@@ -147,6 +148,22 @@
     "showOnMap": "Auf Karte ansehen",
     "note": "Bitte stimmen Sie Abholung und Verfügbarkeit vorab telefonisch oder über die Anfrage ab."
   },
+  "availabilityPage": {
+    "title": "Verfügbarkeit prüfen",
+    "subtitle": "Sehen Sie auf einen Blick, welche Fahrzeuge an Ihrer Station frei sind – und buchen Sie direkt online.",
+    "pickHint": "Wählen Sie zunächst Ihre Station. Anschließend sehen Sie die aktuell verfügbaren Fahrzeuge.",
+    "backToStations": "Andere Station wählen",
+    "windowNote": "Verfügbarkeit für den nächstmöglichen Mietzeitraum. Für kurzfristige Termine rufen Sie uns bitte an.",
+    "statusAvailable": "Verfügbar",
+    "statusBooked": "Belegt – anrufen",
+    "callToBook": "Für diesen Zeitraum belegt – bitte telefonisch anfragen",
+    "seats": "{count} Sitze",
+    "towbar": "Anhängerkupplung",
+    "ctaAvailable": "Passendes Fahrzeug gefunden? Buchen Sie Ihren Wunschzeitraum direkt online.",
+    "ctaAllBooked": "Aktuell ist online kein Fahrzeug frei. Rufen Sie uns an – oft finden wir kurzfristig doch eine Lösung: {phone}",
+    "noData": "Für diese Station liegen aktuell keine Online-Verfügbarkeitsdaten vor. Bitte fragen Sie telefonisch an.",
+    "callStation": "Station anrufen: {phone}"
+  },
   "vehiclesPage": {
     "title": "Unsere Fahrzeuge",
     "subtitle": "Wählen Sie die Fahrzeugkategorie, die zu Ihrem Bedarf passt – wir finden die passende Lösung.",
@@ -202,6 +219,8 @@
       "submit": "Anfrage absenden",
       "submitting": "Wird gesendet …",
       "success": "Vielen Dank! Ihre Anfrage wurde gesendet. Wir melden uns schnellstmöglich bei Ihnen.",
+      "wipTitle": "Online-Anfrage in Arbeit",
+      "wipText": "Das Anfrageformular richten wir gerade für Sie ein. Bitte kontaktieren Sie uns solange telefonisch oder buchen Sie direkt online.",
       "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
       "errors": {
         "nameRequired": "Bitte geben Sie Ihren Namen an.",

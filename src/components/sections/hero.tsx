@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import { heroImage, unsplash } from "@/data/images";
 import { BookingLink } from "@/components/booking-link";
+import { AvailabilityLink } from "@/components/availability-link";
 
 export async function Hero() {
   const t = await getTranslations();
@@ -41,16 +42,14 @@ export async function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <BookingLink locale={locale} size="lg">
-              {t("cta.checkAvailability")}
+              {t("cta.bookOnline")}
             </BookingLink>
-            <BookingLink
-              locale={locale}
-              variant="outline"
+            <AvailabilityLink
               size="lg"
               className="border-white/40 bg-white/10 text-white backdrop-blur hover:bg-white/20"
             >
-              {t("cta.bookOnline")}
-            </BookingLink>
+              {t("cta.checkAvailability")}
+            </AvailabilityLink>
           </div>
         </div>
       </div>

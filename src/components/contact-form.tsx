@@ -4,13 +4,21 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useLocale, useTranslations } from "next-intl";
-import { CheckCircle2, AlertCircle } from "lucide-react";
+import { CheckCircle2, AlertCircle, Wrench, Phone } from "lucide-react";
 import { contactFormSchema, type ContactFormInput } from "@/lib/validators";
 import { Input, Textarea, Select } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { vehicleCategories } from "@/data/vehicles";
+import { contact } from "@/data/contact";
 
 type Status = "idle" | "success" | "error";
+
+/**
+ * Kontaktformular scharfschalten: auf `true` setzen, sobald die Anbindung an
+ * das NuVio-Core-System steht. Solange `false`, ist das Formular als „in Arbeit"
+ * markiert – Felder deaktiviert, kein Versand (der API-Endpunkt antwortet 503).
+ */
+const FORM_ENABLED = false;
 
 export function ContactForm() {
   const t = useTranslations();
@@ -37,6 +45,7 @@ export function ContactForm() {
   });
 
   async function onSubmit(values: ContactFormInput) {
+    if (!FORM_ENABLED) return;
     setStatus("idle");
     try {
       const res = await fetch("/api/contact", {
@@ -73,6 +82,31 @@ export function ContactForm() {
         {...register("company")}
       />
 
+      {!FORM_ENABLED && (
+        <div className="flex flex-col gap-4 rounded-(--radius-lg) border border-amber-200 bg-amber-50 p-5 text-amber-900 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-start gap-3">
+            <Wrench className="mt-0.5 size-5 shrink-0" />
+            <div>
+              <p className="font-medium">{t("contactPage.form.wipTitle")}</p>
+              <p className="mt-1 text-sm text-amber-800">
+                {t("contactPage.form.wipText")}
+              </p>
+            </div>
+          </div>
+          <Button asChild variant="accent" className="shrink-0">
+            <a href={contact.phoneHref}>
+              <Phone className="size-4" />
+              {contact.phone}
+            </a>
+          </Button>
+        </div>
+      )}
+
+      <fieldset
+        disabled={!FORM_ENABLED}
+        aria-hidden={!FORM_ENABLED}
+        className="space-y-5 disabled:opacity-60"
+      >
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label={t("contactPage.form.name")} error={errors.name?.message} t={t}>
           <Input
@@ -157,6 +191,7 @@ export function ContactForm() {
           ? t("contactPage.form.submitting")
           : t("contactPage.form.submit")}
       </Button>
+      </fieldset>
     </form>
   );
 }

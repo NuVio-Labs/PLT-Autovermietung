@@ -59,7 +59,7 @@ export default async function VehiclesPage({
       <Section>
         <VehicleFilter
           allLabel={t("categories.all")}
-          ctaLabel={t("cta.checkAvailability")}
+          ctaLabel={t("cta.bookOnline")}
           facts={facts}
           categories={categories}
         />

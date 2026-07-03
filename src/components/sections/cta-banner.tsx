@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { BookingLink } from "@/components/booking-link";
+import { AvailabilityLink } from "@/components/availability-link";
 
 export async function CtaBanner() {
   const t = await getTranslations();
@@ -16,16 +17,14 @@ export async function CtaBanner() {
         </div>
         <div className="flex flex-col gap-3 sm:flex-row">
           <BookingLink locale={locale} size="lg">
-            {t("cta.checkAvailability")}
+            {t("cta.bookOnline")}
           </BookingLink>
-          <BookingLink
-            locale={locale}
-            variant="outline"
+          <AvailabilityLink
             size="lg"
             className="border-white/30 bg-white/10 text-white hover:bg-white/20"
           >
-            {t("cta.bookOnline")}
-          </BookingLink>
+            {t("cta.checkAvailability")}
+          </AvailabilityLink>
         </div>
       </div>
     </section>

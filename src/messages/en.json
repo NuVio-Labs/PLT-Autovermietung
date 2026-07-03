@@ -9,6 +9,7 @@
   "nav": {
     "home": "Home",
     "vehicles": "Vehicles",
+    "availability": "Availability",
     "prices": "Prices",
     "process": "How it works",
     "locations": "Locations",
@@ -147,6 +148,22 @@
     "showOnMap": "View on map",
     "note": "Please arrange pickup and availability in advance by phone or via the request form."
   },
+  "availabilityPage": {
+    "title": "Check availability",
+    "subtitle": "See at a glance which vehicles are free at your station – and book directly online.",
+    "pickHint": "First choose your station. You'll then see the vehicles currently available.",
+    "backToStations": "Choose another station",
+    "windowNote": "Availability for the next possible rental period. For short-notice bookings, please give us a call.",
+    "statusAvailable": "Available",
+    "statusBooked": "Booked – call us",
+    "callToBook": "Booked for this period – please enquire by phone",
+    "seats": "{count} seats",
+    "towbar": "Tow bar",
+    "ctaAvailable": "Found the right vehicle? Book your preferred period directly online.",
+    "ctaAllBooked": "No vehicle is available online right now. Give us a call – we can often still find a solution at short notice: {phone}",
+    "noData": "No online availability data is currently available for this station. Please enquire by phone.",
+    "callStation": "Call station: {phone}"
+  },
   "vehiclesPage": {
     "title": "Our vehicles",
     "subtitle": "Choose the vehicle category that fits your needs – we'll find the right solution.",
@@ -202,6 +219,8 @@
       "submit": "Send request",
       "submitting": "Sending …",
       "success": "Thank you! Your request has been sent. We'll get back to you as soon as possible.",
+      "wipTitle": "Online request coming soon",
+      "wipText": "We're currently setting up the request form for you. In the meantime, please give us a call or book directly online.",
       "error": "An error occurred while sending. Please try again or call us.",
       "errors": {
         "nameRequired": "Please enter your name.",

@@ -6,6 +6,7 @@ import { LanguageSwitcher } from "./language-switcher";
 import { MobileNav } from "./mobile-nav";
 import { HeaderShell } from "./header-shell";
 import { BookingLink } from "@/components/booking-link";
+import { AvailabilityLink } from "@/components/availability-link";
 
 export async function Header() {
   const t = await getTranslations();
@@ -29,8 +30,11 @@ export async function Header() {
 
         <div className="hidden md:flex md:items-center md:gap-4">
           <LanguageSwitcher />
-          <BookingLink locale={locale} size="sm">
+          <AvailabilityLink variant="ghost" size="sm">
             {t("cta.checkAvailability")}
+          </AvailabilityLink>
+          <BookingLink locale={locale} size="sm">
+            {t("cta.bookOnline")}
           </BookingLink>
         </div>
 

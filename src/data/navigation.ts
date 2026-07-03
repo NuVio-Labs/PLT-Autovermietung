@@ -6,6 +6,7 @@ export type NavItem = {
   labelKey:
     | "nav.home"
     | "nav.vehicles"
+    | "nav.availability"
     | "nav.prices"
     | "nav.process"
     | "nav.locations"
@@ -16,6 +17,7 @@ export type NavItem = {
 /** Hauptnavigation (Header + mobiles Menü) – Reihenfolge laut Projekt.md §7. */
 export const mainNav: NavItem[] = [
   { href: "/fahrzeuge", labelKey: "nav.vehicles" },
+  { href: "/verfuegbarkeit", labelKey: "nav.availability" },
   { href: "/preise", labelKey: "nav.prices" },
   { href: "/ablauf", labelKey: "nav.process" },
   { href: "/standorte", labelKey: "nav.locations" },
