@@ -166,10 +166,19 @@ async function StationView({
                     </p>
                   </div>
                   {v.status === "available" ? (
-                    <Badge className="shrink-0 gap-1 bg-(--color-green) text-white">
-                      <CheckCircle2 className="size-3.5" />
-                      {t("availabilityPage.statusAvailable")}
-                    </Badge>
+                    <div className="flex shrink-0 flex-col items-end gap-1">
+                      <Badge className="gap-1 bg-(--color-green) text-white">
+                        <CheckCircle2 className="size-3.5" />
+                        {t("availabilityPage.statusAvailable")}
+                      </Badge>
+                      {v.availableFrom && !isToday(v.availableFrom) && (
+                        <span className="text-xs text-(--color-muted)">
+                          {t("availabilityPage.fromDate", {
+                            date: formatDay(v.availableFrom, locale),
+                          })}
+                        </span>
+                      )}
+                    </div>
                   ) : (
                     <a
                       href={station.phoneHref}
@@ -224,4 +233,17 @@ async function NoData({ station }: { station: Station }) {
       </a>
     </div>
   );
+}
+
+/** ISO-Datum (YYYY-MM-DD) ist der heutige Tag? */
+function isToday(isoDate: string): boolean {
+  return isoDate.slice(0, 10) === new Date().toISOString().slice(0, 10);
+}
+
+/** ISO-Datum lokalisiert als kurzer Klartext, z. B. "10.07." / "Jul 10". */
+function formatDay(isoDate: string, locale: Locale): string {
+  return new Date(isoDate).toLocaleDateString(locale, {
+    day: "2-digit",
+    month: "2-digit",
+  });
 }
