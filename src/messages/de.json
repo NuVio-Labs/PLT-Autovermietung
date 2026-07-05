@@ -204,6 +204,7 @@
     "phone": "Telefon",
     "email": "E-Mail",
     "hours": "Öffnungszeiten",
+    "hoursNote": "Vermietung nach Vereinbarung – je Station individuell. Bitte stimmen Sie Abholung und Rückgabe telefonisch ab oder prüfen Sie online die Verfügbarkeit.",
     "showMap": "Standort auf Karte ansehen",
     "form": {
       "title": "Anfrage senden",

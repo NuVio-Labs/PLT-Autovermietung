@@ -70,14 +70,9 @@ export default async function ContactPage({
                 <p className="text-sm font-medium text-(--color-text)">
                   {t("contactPage.hours")}
                 </p>
-                <ul className="mt-1 space-y-1 text-(--color-muted)">
-                  {contact.openingHours.map((oh) => (
-                    <li key={oh.days} className="flex gap-3">
-                      <span className="w-16">{oh.days}</span>
-                      <span>{oh.time}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mt-1 text-(--color-muted)">
+                  {t("contactPage.hoursNote")}
+                </p>
               </div>
             </div>
 

@@ -204,6 +204,7 @@
     "phone": "Phone",
     "email": "Email",
     "hours": "Opening hours",
+    "hoursNote": "Rental by arrangement – individual per station. Please arrange pickup and return by phone or check availability online.",
     "showMap": "View location on map",
     "form": {
       "title": "Send a request",

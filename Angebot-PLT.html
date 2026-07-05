@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angebot – PLT Autovermietung Website</title>
+<style>
+  :root {
+    --ground: #f7f9fb;
+    --card: #ffffff;
+    --ink: #17161b;
+    --ink-soft: #565f6e;
+    --ink-faint: #8b94a3;
+    --line: #e5eaf0;
+    --line-soft: #eef2f6;
+    --blue: #2f78b8;
+    --blue-dark: #245e92;
+    --green: #6f9709;
+    --green-tint: #f0f5e2;
+    --pink: #dd3a8a;
+    --shadow: 0 1px 2px rgba(23,22,27,.04), 0 8px 24px -12px rgba(36,94,146,.18);
+    --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #14171c;
+      --card: #1b1f26;
+      --ink: #f2f5f8;
+      --ink-soft: #b3bcc9;
+      --ink-faint: #7c8797;
+      --line: #2b313b;
+      --line-soft: #232830;
+      --blue: #5a9fd8;
+      --blue-dark: #7bb4e2;
+      --green: #9fc63d;
+      --green-tint: #26311a;
+      --pink: #ef5ba0;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px -14px rgba(0,0,0,.5);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "kern";
+  }
+
+  .sheet {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1.1rem, 4vw, 2.5rem) 4rem;
+  }
+
+  .masthead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .75rem 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1;
+  }
+  .wordmark .p { color: var(--blue); }
+  .wordmark .l { color: var(--pink); }
+  .wordmark .t { color: var(--green); }
+  .wordmark .rest { color: var(--ink); font-weight: 600; font-size: 1.05rem; margin-left: .1rem; }
+  .doc-meta {
+    text-align: right;
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    line-height: 1.5;
+  }
+
+  .lede { margin: 2.25rem 0 2.75rem; }
+  .eyebrow {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin: 0 0 .7rem;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+    margin: 0 0 .85rem;
+  }
+  .lede p {
+    margin: 0;
+    max-width: 34rem;
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+  }
+
+  section { margin-top: 2.75rem; }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: .6rem;
+    margin-bottom: 1.1rem;
+  }
+  .sec-num {
+    font-family: var(--serif);
+    font-size: .95rem;
+    color: var(--blue);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .sec-head h2 {
+    font-size: 1.15rem;
+    font-weight: 650;
+    letter-spacing: -.01em;
+    margin: 0;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.05rem 1.35rem;
+    border-top: 1px solid var(--line-soft);
+  }
+  .row:first-child { border-top: 0; }
+  .row .label { min-width: 0; }
+  .row .label .name { font-weight: 600; }
+  .row .label .desc {
+    font-size: .87rem;
+    color: var(--ink-soft);
+    margin-top: .15rem;
+  }
+  .price {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .price .amount {
+    font-weight: 650;
+    font-size: 1.08rem;
+    letter-spacing: -.01em;
+  }
+  .price .unit {
+    display: block;
+    font-size: .74rem;
+    color: var(--ink-faint);
+    margin-top: .1rem;
+    letter-spacing: .02em;
+  }
+  .price .was {
+    display: block;
+    font-size: .8rem;
+    color: var(--ink-faint);
+    text-decoration: line-through;
+    text-decoration-color: var(--pink);
+    margin-bottom: .1rem;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: var(--green-tint);
+    padding: .18rem .5rem;
+    border-radius: 999px;
+    margin-left: .5rem;
+    vertical-align: middle;
+  }
+
+  .highlight {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--blue) 7%, var(--card)), var(--card));
+  }
+
+  .scope {
+    list-style: none;
+    margin: 0;
+    padding: 1.15rem 1.35rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: .55rem 1.4rem;
+  }
+  .scope li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: .92rem;
+    color: var(--ink-soft);
+  }
+  .scope li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: .5em;
+    width: .7rem; height: .7rem;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 3px var(--green-tint);
+  }
+  .scope li b { color: var(--ink); font-weight: 600; }
+
+  .stations-note {
+    font-size: .88rem;
+    color: var(--ink-soft);
+    padding: 0 1.35rem 1.1rem;
+    margin: -.2rem 0 0;
+  }
+
+  .totals {
+    margin-top: 2.75rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: .35rem 1.35rem 1.35rem;
+  }
+  .totals .row { border-top: 1px solid var(--line-soft); }
+  .totals .grand {
+    border-top: 2px solid var(--ink);
+    margin-top: .2rem;
+    padding-top: 1.15rem;
+  }
+  .totals .grand .name { font-size: 1.02rem; font-weight: 700; }
+  .totals .grand .amount { font-size: 1.35rem; color: var(--blue); }
+
+  .fineprint {
+    margin-top: 1.75rem;
+    font-size: .8rem;
+    color: var(--ink-faint);
+    line-height: 1.7;
+  }
+  .fineprint p { margin: .35rem 0; }
+
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5rem 1.5rem;
+    font-size: .82rem;
+    color: var(--ink-soft);
+  }
+  footer b { color: var(--ink); }
+
+  @media (max-width: 30rem) {
+    .row { grid-template-columns: 1fr; gap: .35rem; }
+    .price { text-align: left; }
+    .price .was, .price .unit { display: inline; margin: 0 .4rem 0 0; }
+  }
+
+  /* ---- Druck / PDF: helles Layout, saubere Umbrüche ---- */
+  @media print {
+    @page { margin: 16mm 14mm; }
+    :root {
+      --ground: #ffffff;
+      --card: #ffffff;
+      --ink: #17161b;
+      --ink-soft: #4c5460;
+      --ink-faint: #7a828f;
+      --line: #d9dfe6;
+      --line-soft: #e9edf1;
+      --shadow: none;
+    }
+    body { background: #fff; }
+    .sheet { max-width: none; padding: 0; }
+    .card, .totals { box-shadow: none; break-inside: avoid; }
+    section { break-inside: avoid; }
+    .masthead { break-after: avoid; }
+    footer { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+    /* Farbige Akzente auch im Druck erhalten */
+    .wordmark .p, .wordmark .l, .wordmark .t,
+    .eyebrow, .sec-num, .badge, .price .was,
+    .totals .grand .amount, .scope li::before {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="wordmark">
+      <span class="p">P</span><span class="l">L</span><span class="t">T</span><span class="rest"> Autovermietung</span>
+    </div>
+    <div class="doc-meta">
+      Angebot · Website-Relaunch<br>
+      erstellt von NuVio&nbsp;Labs
+    </div>
+  </header>
+
+  <div class="lede">
+    <p class="eyebrow">Kostenübersicht</p>
+    <h1>Website-Relaunch für PLT Autovermietung</h1>
+    <p>Dreisprachiger, mobil-optimierter Webauftritt mit Live-Fahrzeugverfügbarkeit und Anbindung an das Online-Buchungssystem – transparent aufgeschlüsselt in einmalige und laufende Kosten.</p>
+  </div>
+
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2>Einmalige Erstellung</h2>
+    </div>
+    <div class="card">
+      <div class="row highlight">
+        <div class="label">
+          <div class="name">Website-Komplettpaket <span class="badge">Referenzkunde</span></div>
+          <div class="desc">Konzept, Design, Umsetzung, 3 Sprachen, SEO-Grundlagen &amp; rechtliche Seiten – schlüsselfertig.</div>
+        </div>
+        <div class="price">
+          <span class="was">regulär 5.900&nbsp;€</span>
+          <span class="amount">1.850&nbsp;€</span>
+          <span class="unit">einmalig</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:1rem;">
+      <ul class="scope">
+        <li><b>11 Seiten</b> – Start, Fahrzeuge, Preise, Ablauf, Standorte u.&nbsp;a.</li>
+        <li><b>Dreisprachig</b> – Deutsch, Niederländisch, Englisch</li>
+        <li><b>Live-Verfügbarkeit</b> – freie Fahrzeuge je Station in Echtzeit</li>
+        <li><b>Online-Buchung</b> – direkte Anbindung ans Buchungssystem</li>
+        <li><b>Suchmaschinen-optimiert</b> – Sitemap, Meta-Daten, lokale Auffindbarkeit</li>
+        <li><b>Mobil zuerst</b> – optimiert für Smartphone &amp; Tablet</li>
+        <li><b>Eigenes Design</b> – im PLT-Markenlook, kein Baukasten</li>
+        <li><b>Rechtssicher</b> – Impressum, AGB, Datenschutz eingebunden</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2>Laufende Kosten (monatlich)</h2>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="label">
+          <div class="name">Website-Wartung &amp; Pflege</div>
+          <div class="desc">Updates, Sicherheit, Erreichbarkeit und kleine Anpassungen.</div>
+        </div>
+        <div class="price">
+          <span class="amount">25,00&nbsp;€</span>
+          <span class="unit">pro Monat</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <div class="name">Buchungssystem – Grundgebühr</div>
+          <div class="desc">Betrieb der Online-Buchung inkl. Hosting, Datenbank &amp; erste Station.</div>
+        </div>
+        <div class="price">
+          <span class="amount">37,90&nbsp;€</span>
+          <span class="unit">pro Monat</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <div class="name">Je weitere Station</div>
+          <div class="desc">Freischaltung zusätzlicher Stationen für die Online-Buchung.</div>
+        </div>
+        <div class="price">
+          <span class="amount">24,90&nbsp;€</span>
+          <span class="unit">pro Station / Monat</span>
+        </div>
+      </div>
+    </div>
+    <p class="stations-note">Die Online-Buchung wird schrittweise pro Station freigeschaltet – Sie zahlen nur für aktive Stationen. Der Start erfolgt mit einer Pilotstation (Kranenburg).</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2>Ihre Kosten im Überblick</h2>
+    </div>
+    <div class="totals">
+      <div class="row">
+        <div class="label"><div class="name">Einmalig zum Start</div></div>
+        <div class="price"><span class="amount">1.850,00&nbsp;€</span></div>
+      </div>
+      <div class="row grand">
+        <div class="label">
+          <div class="name">Monatlich ab Start</div>
+          <div class="desc">Website-Wartung 25,00&nbsp;€ + Buchungssystem 37,90&nbsp;€ (1&nbsp;Pilotstation). Jede weitere freigeschaltete Station +&nbsp;24,90&nbsp;€/Monat.</div>
+        </div>
+        <div class="price"><span class="amount">ab 62,90&nbsp;€</span><span class="unit">pro Monat</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="fineprint">
+    <p>Gemäß §19 UStG wird keine Umsatzsteuer berechnet oder ausgewiesen. Die einmalige Erstellung ist nach Abnahme fällig; laufende Kosten werden monatlich abgerechnet.</p>
+    <p>Der reguläre Erstellungswert von 5.900&nbsp;€ spiegelt den marktüblichen Aufwand für eine individuelle, dreisprachige Website mit Live-Anbindung wider. Der Vorzugspreis gilt bei Freigabe der Website als Referenzprojekt für NuVio&nbsp;Labs.</p>
+  </div>
+
+  <footer>
+    <div>Angebot freibleibend · gültig 30&nbsp;Tage</div>
+    <div><b>NuVio Labs</b> · contact@nuviolabs.de</div>
+  </footer>
+
+</div>
+</body>
+</html>

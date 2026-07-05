@@ -79,14 +79,9 @@ export async function Footer() {
             <Clock className="size-4" />
             {t("contactPage.hours")}
           </h2>
-          <ul className="mt-4 flex flex-col gap-2 text-sm text-(--color-muted)">
-            {contact.openingHours.map((oh) => (
-              <li key={oh.days} className="flex justify-between gap-4">
-                <span>{oh.days}</span>
-                <span>{oh.time}</span>
-              </li>
-            ))}
-          </ul>
+          <p className="mt-4 text-sm text-(--color-muted)">
+            {t("contactPage.hoursNote")}
+          </p>
         </div>
       </div>
 

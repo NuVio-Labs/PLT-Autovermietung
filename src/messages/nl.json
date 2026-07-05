@@ -204,6 +204,7 @@
     "phone": "Telefoon",
     "email": "E-mail",
     "hours": "Openingstijden",
+    "hoursNote": "Verhuur op afspraak – per station verschillend. Stem het ophalen en terugbrengen telefonisch af of controleer de beschikbaarheid online.",
     "showMap": "Locatie op kaart bekijken",
     "form": {
       "title": "Aanvraag versturen",

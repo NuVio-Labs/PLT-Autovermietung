@@ -27,12 +27,10 @@ export const contact = {
   // Maps-Link (Zwei-Klick / kein iFrame ohne Einwilligung – Projekt.md §36)
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=PLT+Autovermietung+An+der+Horst+37+47652+Weeze",
-  // Öffnungszeiten – TODO: vom Kunden bestätigen (im Impressum nicht hinterlegt)
-  openingHours: [
-    { days: "Mo–Fr", time: "08:00 – 18:00" },
-    { days: "Sa", time: "09:00 – 13:00" },
-    { days: "So", time: "Geschlossen" },
-  ],
+  // Öffnungszeiten: PLT hat keine festen Zeiten hinterlegt und vermietet je
+  // Station nach Absprache. Statt (erfundener) Zeiten zeigen wir daher einen
+  // "nach Vereinbarung"-Hinweis + Telefon/Verfügbarkeitsprüfung. Falls PLT feste
+  // Zeiten liefert, hier wieder ein openingHours-Array einführen.
 } as const;
 
 /**

@@ -76,11 +76,7 @@ export function localBusinessJsonLd() {
     },
     // Bediente Orte (Vermietstationen im Kreis Kleve / Niederrhein)
     areaServed: stationCities.map((city) => ({ "@type": "City", name: city })),
-    openingHoursSpecification: contact.openingHours.map((oh) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: oh.days,
-      // Zeiten als Hinweis; final mit Kundendaten strukturieren.
-      description: oh.time,
-    })),
+    // Keine openingHoursSpecification: PLT vermietet nach Vereinbarung, feste
+    // Zeiten liegen nicht vor – lieber keine als erfundene strukturierten Daten.
   };
 }
