@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Internes Angebotsdokument (nicht ins Repo)
+Angebot-PLT.html
